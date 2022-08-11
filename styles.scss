@@ -1,0 +1,36 @@
+$font-stack: Dela Gothic One;
+$color: white;
+$background: rgb(17, 16, 16);
+$grid-width:50%;
+
+.container__services{
+width: 100vw;
+height: 100%;
+background: $background;
+text-align: center;
+color: $color;
+
+.container__services_serv1,.container__services_serv2,.container__services_serv3,.container__services_serv4,
+.container__services_serv5,.container__services_serv6,.container__services_serv7,.container__services_serv8 
+{
+display: grid;
+width:$grid-width;
+margin-left: 25%;
+    
+}
+
+.main header {
+    font:100% $font-stack;
+    
+}
+.second header{
+    font:50% $font-stack;
+    
+}
+
+ .serv2__text,.serv3__text,.serv4__text,.serv5__text,.serv6__text,.serv7__text,.serv8__text{
+    
+    font:$font-stack
+}
+
+}
