@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*Тут переменные, общие для всего проекта*/
+/* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+main,
+section,
+footer {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.form-container {
+  background-color: #000;
+  color: white;
+}
+
+.form-items {
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+}
+.form-items__header {
+  font-size: large;
+  font-weight: 600;
+  grid-column: 1;
+  grid-row: 1;
+}
+.form-items__inputs {
+  display: grid;
+  gap: 1em;
+}
+.form-items__inputs_name {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  grid-column: 1;
+  grid-row: 2;
+}
+.form-items__inputs_phone {
+  grid-column: 1;
+  grid-row: 3;
+}
+.form-items__inputs_email {
+  grid-column: 1;
+  grid-row: 4;
+}
+.form-items__inputs_message {
+  grid-column: 1;
+  grid-row: 5;
+}
+.form-items__inputs_submit {
+  grid-column: 1;
+  grid-row: 6;
+}/*# sourceMappingURL=main-styles.css.map */

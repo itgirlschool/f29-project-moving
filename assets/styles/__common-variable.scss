@@ -1,0 +1,43 @@
+/*Тут переменные, общие для всего проекта*/
+
+$grid-breakpoint-xs: 0;
+$grid-breakpoint-sm: 576px;
+$grid-breakpoint-md: 768px;
+$grid-breakpoint-lg: 992px;
+$grid-breakpoint-xl: 1200px;
+$grid-breakpoint-xxl: 1400px;
+
+
+$font-family-serif: Georgia, 'Times New Roman', serif;
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+
+$color-main: #000;
+$container-max-width: 1296px;
+
+/* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: $font-family-sans-serif;
+    color: $color-main;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+main,
+section,
+footer {
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
