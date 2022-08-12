@@ -1,15 +1,4 @@
-$main-background: #0C0B0B;
-$grey-background: #282828;
-$burger-color: #232323;
-$text-color: #cdcdcd;
-$menu-color: white;
-$menu-burger-background: #ededed;
-
-$font-family-main: Arial, Helvetica, sans-serif;
-$font-size-home: 20px;
-$font-size-home-mobile: 22px;
-
-*,*:before,*:after {
+*:before,*:after {
     padding: 0;
     margin: 0;
     border: 0;
@@ -18,7 +7,6 @@ $font-size-home-mobile: 22px;
 
 html, body {
     height: 100vh;
-    font-family: $font-family-main;
     background-color: $main-background;
 }
 
@@ -43,10 +31,10 @@ html, body {
         grid-template-rows: 6em 4em;
         grid-template-columns: 1fr;
         background-color: $main-background;
-        font-family: $font-family-main;
+        font-family: $font-family-sans-serif;
         color: $menu-color;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
         display: grid;
         position: fixed;
         z-index: 10;
@@ -57,7 +45,7 @@ html, body {
         grid-template-rows: 10em 4em;
         grid-template-columns: 1fr;
         background-color: $main-background;
-        font-family: $font-family-main;
+        font-family: $font-family-sans-serif;
         color: $menu-color;
         }
     }
@@ -69,7 +57,7 @@ html, body {
         grid-template-columns: 70vw 30vw;
         background-color: $grey-background;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 6em 3em;
@@ -84,7 +72,7 @@ html, body {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
             display: none;
         }
     }
@@ -97,13 +85,21 @@ html, body {
         position: relative;
         top: 12em;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         position: relative;
-        top: 15em;
+        top: 4em;
         }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            position: relative;
+            top: 15em;
+            }
     }
 }
 
@@ -116,7 +112,7 @@ html, body {
         justify-items: end;
         align-items: center;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -130,24 +126,28 @@ html, body {
         grid-template-rows: 1fr;
         justify-items: end;
         align-items: center;
-        font-size: large;
+        font-size: $font-size-home;
         padding-right: 3em;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
-        font-size: larger;
+        font-size: $font-size-home;
         }
     }
+}
+
+.tel {
+    width: 25px;
 }
 
 .img_responsive {
     max-height: 85%;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: $grid-breakpoint-md) {
     max-width: 90%;
     }
 }
@@ -160,7 +160,7 @@ html, body {
         align-items: center;
         list-style: none;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
         display: flex;
         flex-direction: column;
         justify-items:flex-start;
@@ -170,9 +170,14 @@ html, body {
 
     // .nav__item
     &__item {
-        font-size: large;
+        font-size: $font-size-home;
         color: $menu-color;
         text-decoration: none;
+    }
+    &__item:hover {
+        color: $text-color;
+        background-color: $grey-background;
+        border-radius: 10%;
     }
 }
 
@@ -186,7 +191,7 @@ html, body {
         max-width: inherit;
         position: relative;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             grid-template-rows: repeat(2,1fr);
             grid-template-columns: 1fr;
@@ -205,11 +210,17 @@ html, body {
         line-height: 30px;
         font-size: $font-size-home;
 
-        @media screen and (max-width:767px) {
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: $font-size-home-mobile;
-        margin-bottom: -1em;
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: grid;
+            color: $text-color;
+            text-align: center;
+            align-items: center;
+            line-height: 30px;
+    
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: $font-size-home-mobile;
+            margin-bottom: 0;
         }    
     }
 
@@ -219,12 +230,19 @@ html, body {
         overflow: hidden;
         margin: 4em 0 2em 0;
 
-        @media screen and (max-width:767px) {
-        display: none;
+        @media screen and (max-width: $grid-breakpoint-md) {
+        margin: 2em 0 0 0;
+        //display: none;
         }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            margin: 2em 0 0 0;
+            //display: none;
+            }
+    
     }
 
-    // .about__details
+    // .about__details  //   // ADVANTAGES
     &__details {
         display: grid;
         margin-left: 1em;
@@ -239,6 +257,7 @@ html, body {
 .footer {
     display: grid;
     color: $menu-color;
+    font-size: $font-size-footer;
 
     // .footer__find
     &__find {
@@ -281,12 +300,16 @@ html, body {
     }
 }
 
+.social_icon {
+    width: 40px;
+}
+
 
 //// MENU BURGER start ////
 .burger__menu {
     display: none;
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: $grid-breakpoint-md) {
         display: block;
         }
 }
@@ -307,7 +330,7 @@ html, body {
 }
 
 #menuToggle a:hover {
-    color: tomato;
+    color: $menu-burger-active-item;
 }
 
 #menuToggle input {
@@ -376,7 +399,7 @@ html, body {
 
 #menu li {
     padding: 10px 0;
-    font-size: 22px;
+    font-size: $font-size-home-mobile;
 }
 
 #menuToggle input:checked ~ ul {
