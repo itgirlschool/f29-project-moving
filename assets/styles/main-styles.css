@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Тут переменные, общие для всего проекта*/
+/*Это итоговый файл со стилями, тут никакой код не пишем!!! только подключения других файлов*/ /*Тут переменные, общие для всего проекта*/
 /* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
 * {
   box-sizing: border-box;
@@ -26,47 +26,132 @@ footer {
   margin: 0 auto;
 }
 
-.form-container {
-  background-color: #000;
+/* здесь надо писать стили для файла moving-form.html */
+.container_movingform {
+  width: 100wv;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 2fr repeat(14 1fr);
+  background: #000;
   color: white;
+  text-align: center;
 }
 
-.form-items {
+.header {
+  grid-row: 1/2;
+  font-size: 3em;
+}
+
+.address {
+  grid-row: 2/3;
+  font-size: 2em;
+}
+
+.address1 {
+  grid-row: 3/4;
+  font-size: 1.5em;
+}
+
+.email1 {
+  grid-row: 4/5;
+  font-size: 1.5em;
+}
+
+.address2 {
+  grid-row: 5/6;
+  font-size: 1.5em;
+}
+
+.email2 {
+  grid-row: 6/7;
+  font-size: 1.5em;
+}
+
+.time {
+  grid-row: 7/8;
+  font-size: 2em;
+}
+
+.mon {
+  grid-row: 8/9;
+  font-size: 1.5em;
+}
+
+.tue {
+  grid-row: 9/10;
+  font-size: 1.5em;
+}
+
+.wed {
+  grid-row: 10/11;
+  font-size: 1.5em;
+}
+
+.thu {
+  grid-row: 11/12;
+  font-size: 1.5em;
+}
+
+.fri {
+  grid-row: 12/13;
+  font-size: 1.5em;
+}
+
+.sat {
+  grid-row: 13/14;
+  font-size: 1.5em;
+}
+
+.sun {
+  grid-row: 14/15;
+  font-size: 1.5em;
+}
+
+.contactform_text1 {
+  grid-row: 15/16;
+  font-size: 1.5em;
+}
+
+.contactform {
   display: grid;
-  gap: 2em;
-  justify-content: center;
-}
-.form-items__header {
-  font-size: large;
-  font-weight: 600;
-  grid-column: 1;
-  grid-row: 1;
-}
-.form-items__inputs {
-  display: grid;
-  gap: 1em;
-}
-.form-items__inputs_name {
-  background-color: black;
+  grid-template-rows: repeat(6 2fr) 3fr;
+  grid-template-columns: 8fr;
+  width: 60%;
+  margin-left: 20%;
   color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-  grid-column: 1;
-  grid-row: 2;
+  font-size: 2em;
 }
-.form-items__inputs_phone {
-  grid-column: 1;
-  grid-row: 3;
+
+.contactform_text2 {
+  grid-row: 1/3;
 }
-.form-items__inputs_email {
-  grid-column: 1;
-  grid-row: 4;
+
+.contactform_name {
+  grid-row: 3/4;
 }
-.form-items__inputs_message {
-  grid-column: 1;
-  grid-row: 5;
+
+.contactform_phone {
+  grid-row: 4/5;
 }
-.form-items__inputs_submit {
-  grid-column: 1;
-  grid-row: 6;
+
+.contactform_email {
+  grid-row: 5/6;
+}
+
+.contactform_massage {
+  grid-row: 6/7;
+}
+
+.contactform_btn_send {
+  grid-row: 7/8;
+}
+
+.btn_send {
+  width: 40%;
+  color: white;
+  background: grey;
+}
+.btn_send hover {
+  color: #f3eaea;
+  cursor: pointer;
 }/*# sourceMappingURL=main-styles.css.map */
