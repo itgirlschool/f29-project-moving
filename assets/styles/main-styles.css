@@ -151,7 +151,8 @@ footer {
   color: white;
   background: grey;
 }
-.btn_send hover {
-  color: #f3eaea;
+.btn_send .btn_send:hover {
+  background: grey;
+  color: #5c5858;
   cursor: pointer;
 }/*# sourceMappingURL=main-styles.css.map */

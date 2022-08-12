@@ -131,9 +131,10 @@ $font-size2: 2em;
         width:40%;
         color: $color;
         background: grey;
-        hover {
-           
-            color: #f3eaea;
+        
+        .btn_send:hover {
+            background: grey;
+            color: #5c5858;
             cursor: pointer;
       }
       
