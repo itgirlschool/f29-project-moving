@@ -1,0 +1,105 @@
+html, body {
+    height: 100vh;
+    background-color: $main-background;
+}
+
+
+.container {
+
+    // .container__services
+
+    &__services {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        background-color: $main-background;
+        margin-top: 1em;
+        margin-bottom: 4em;
+        position: relative;
+        
+    }
+}
+.about {
+
+    // .about__services
+
+    &__services {
+        display: grid;
+        background-color: $main-background;
+        grid-template-rows: repeate (7, 1fr);
+        grid-template-columns: 1fr;
+        // color: $menu-color;
+        margin-left: 20em;
+        margin-right: 20em;
+        margin-top: 0;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: grid;
+            background-color: $main-background;
+            grid-template-rows: repeate (7, 1fr);
+            grid-template-columns: 1fr;
+            // color: $menu-color;
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-top: 0;
+            font-size: $font-size-home;
+            }  
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            display: grid;
+            background-color: $main-background;
+            grid-template-rows: repeate (7, 1fr);
+            grid-template-columns: 1fr;
+                
+            margin-left: 8em;
+            margin-right: 8em;
+            margin-top: 0;
+            font-size: $font-size-home;
+            }  
+    }
+
+}
+.main {
+
+    // .main__img
+
+    &__img {
+        width: 100%;
+        // max-width: 100%;
+        // overflow: hidden;
+        // margin: 1em 0 0em 0;
+        margin-bottom: 0;
+        margin-top:0 ;
+    }
+    &__block {
+        display: grid;
+        color: $menu-color;
+    }
+    // .main__title
+
+    &__title {
+        text-align: center;
+        color: $text-color;
+        font-size: $font-size-home;
+        align-items: center;
+        display: grid;
+    }
+
+    // .main__subtitle
+
+    &__subtitle {
+        text-align: left;
+        font-size: 30px;
+        font-weight: bolder;
+        color: $menu-color;
+    }
+
+    // .main__item
+
+    &__item {
+        text-align: left;
+        font-size: 25px;
+        color: $menu-color;
+       
+    }
+}
