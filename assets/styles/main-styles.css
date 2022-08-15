@@ -27,7 +27,9 @@ footer {
 }
 
 /* здесь надо писать стили для файла moving-form.html */
-.container_movingform {
+.movingform {
+  /*Общий контейнер странички*/
+  box-sizing: border-box;
   width: 100wv;
   height: 100%;
   display: grid;
@@ -35,83 +37,74 @@ footer {
   background: #000;
   color: white;
   text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-.header {
+.info {
+  /*Информация адрес и часы работы*/
+}
+.info .info_header {
   grid-row: 1/2;
   font-size: 3em;
 }
-
-.address {
+.info .info_address {
   grid-row: 2/3;
   font-size: 2em;
 }
-
-.address1 {
+.info .info_address1 {
   grid-row: 3/4;
   font-size: 1.5em;
 }
-
-.email1 {
+.info .info_email1 {
   grid-row: 4/5;
   font-size: 1.5em;
 }
-
-.address2 {
+.info .info_address2 {
   grid-row: 5/6;
   font-size: 1.5em;
 }
-
-.email2 {
+.info .info_email2 {
   grid-row: 6/7;
   font-size: 1.5em;
 }
-
-.time {
+.info .info_time {
   grid-row: 7/8;
   font-size: 2em;
 }
-
-.mon {
+.info .info_mon {
   grid-row: 8/9;
   font-size: 1.5em;
 }
-
-.tue {
+.info .info_tue {
   grid-row: 9/10;
   font-size: 1.5em;
 }
-
-.wed {
+.info .info_wed {
   grid-row: 10/11;
   font-size: 1.5em;
 }
-
-.thu {
+.info .info_thu {
   grid-row: 11/12;
   font-size: 1.5em;
 }
-
-.fri {
+.info .info_fri {
   grid-row: 12/13;
   font-size: 1.5em;
 }
-
-.sat {
+.info .info_sat {
   grid-row: 13/14;
   font-size: 1.5em;
 }
-
-.sun {
+.info .info_sun {
   grid-row: 14/15;
   font-size: 1.5em;
 }
-
-.contactform_text1 {
+.info .info_text {
   grid-row: 15/16;
   font-size: 1.5em;
 }
 
+/*Форма для контакта*/
 .contactform {
   display: grid;
   grid-template-rows: repeat(6 2fr) 3fr;
@@ -148,8 +141,10 @@ footer {
 
 .btn_send {
   width: 40%;
+  height: 2em;
   color: white;
   background: grey;
+  border-radius: 8px;
 }
 .btn_send .btn_send:hover {
   background: grey;
