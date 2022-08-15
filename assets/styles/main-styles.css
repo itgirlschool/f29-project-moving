@@ -31,9 +31,7 @@ footer {
   /*Общий контейнер странички*/
   box-sizing: border-box;
   width: 100wv;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 2fr repeat(14 1fr);
+  height: 80hv;
   background: #000;
   color: white;
   text-align: center;
@@ -42,64 +40,67 @@ footer {
 
 .info {
   /*Информация адрес и часы работы*/
+  display: grid;
+  grid-template-rows: 2fr repeat(14, 1fr);
+  border: 1px red solid;
 }
-.info .info_header {
+.info_header {
   grid-row: 1/2;
   font-size: 3em;
 }
-.info .info_address {
+.info_address {
   grid-row: 2/3;
   font-size: 2em;
 }
-.info .info_address1 {
+.info_address1 {
   grid-row: 3/4;
   font-size: 1.5em;
 }
-.info .info_email1 {
+.info_email1 {
   grid-row: 4/5;
   font-size: 1.5em;
 }
-.info .info_address2 {
+.info_address2 {
   grid-row: 5/6;
   font-size: 1.5em;
 }
-.info .info_email2 {
+.info_email2 {
   grid-row: 6/7;
   font-size: 1.5em;
 }
-.info .info_time {
+.info_time {
   grid-row: 7/8;
   font-size: 2em;
 }
-.info .info_mon {
+.info_mon {
   grid-row: 8/9;
   font-size: 1.5em;
 }
-.info .info_tue {
+.info_tue {
   grid-row: 9/10;
   font-size: 1.5em;
 }
-.info .info_wed {
+.info_wed {
   grid-row: 10/11;
   font-size: 1.5em;
 }
-.info .info_thu {
+.info_thu {
   grid-row: 11/12;
   font-size: 1.5em;
 }
-.info .info_fri {
+.info_fri {
   grid-row: 12/13;
   font-size: 1.5em;
 }
-.info .info_sat {
+.info_sat {
   grid-row: 13/14;
   font-size: 1.5em;
 }
-.info .info_sun {
+.info_sun {
   grid-row: 14/15;
   font-size: 1.5em;
 }
-.info .info_text {
+.info_text {
   grid-row: 15/16;
   font-size: 1.5em;
 }
@@ -107,47 +108,40 @@ footer {
 /*Форма для контакта*/
 .contactform {
   display: grid;
-  grid-template-rows: repeat(6 2fr) 3fr;
+  grid-template-rows: repeat(6, 1fr) 2fr;
   grid-template-columns: 8fr;
-  width: 60%;
-  margin-left: 20%;
+  width: 50%;
+  height: 60vh;
+  margin-left: 25%;
   color: white;
   font-size: 2em;
+  border: 1px red solid;
 }
-
 .contactform_text2 {
   grid-row: 1/3;
 }
-
 .contactform_name {
   grid-row: 3/4;
 }
-
 .contactform_phone {
   grid-row: 4/5;
 }
-
 .contactform_email {
   grid-row: 5/6;
 }
-
 .contactform_massage {
   grid-row: 6/7;
 }
-
 .contactform_btn_send {
   grid-row: 7/8;
 }
-
-.btn_send {
+.contactform .btn_send {
   width: 40%;
   height: 2em;
   color: white;
   background: grey;
   border-radius: 8px;
 }
-.btn_send .btn_send:hover {
-  background: grey;
-  color: #5c5858;
+.contactform .btn_send .btn_send:hover {
   cursor: pointer;
 }/*# sourceMappingURL=main-styles.css.map */
