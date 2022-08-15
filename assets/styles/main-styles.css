@@ -120,18 +120,24 @@ footer {
   height: 60vh;
   margin-left: 25%;
   font-size: 2em;
-  border: 1px red solid;
   justify-self: center;
   align-content: space-around;
+  border: red solid 1px;
   /* Цвет в placeholder Chrome, Firefox, Opera, Safari 10.1+ */
   /*Цвет в placeholder Internet Explorer 10-11 */
   /*Цвет в placeholder Microsoft Edge */
 }
 @media screen and (max-width: 576px) {
   .contactform {
-    width: 100%;
+    width: 90%;
     font-size: 1.5em;
-    margin-left: 0;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contactform {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 .contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
@@ -140,6 +146,11 @@ footer {
   color: white;
   background: rgb(60, 58, 58);
   border: 1px solid white;
+}
+@media screen and (max-width: 576px) {
+  .contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
+    padding-top: 5%;
+  }
 }
 .contactform ::-moz-placeholder {
   color: white;

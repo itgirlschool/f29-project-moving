@@ -1,6 +1,7 @@
 /* здесь надо писать стили для файла moving-form.html */
 
 $grid-breakpoint-sm: 576px;
+$grid-breakpoint-xl: 1200px;
 $font-family-serif: Georgia, 'Times New Roman', serif;
 $font-family-sans-serif: Arial, Helvetica, sans-serif;
 
@@ -10,7 +11,7 @@ $color1:rgb(60, 58, 58);
 $container-width:100wv;
 $container-height:80hv;
 $main-color: #000;
-$font-size: .7em;
+$font-size-sm: .7em;
 $font-size1: 1.5em;
 $font-size3: 3em;
 $font-size2: 2em;
@@ -38,7 +39,7 @@ $font-size2: 2em;
     @media screen and (max-width: $grid-breakpoint-sm){
         display:grid;
         grid-template-rows: 1fr repeat(14, 0.5fr);
-        font-size: $font-size
+        font-size: $font-size-sm
     }
         
     &_header{
@@ -113,7 +114,7 @@ $font-size2: 2em;
         } 
     }
 
-    .contactform{
+    .contactform {
    /*Форма для контакта*/
 
         display: grid;
@@ -122,17 +123,23 @@ $font-size2: 2em;
         height:60vh;
         margin-left: 25%;       
         font-size: $font-size2;
-        border:1px red solid;
         justify-self: center;
         align-content: space-around;
+        border: red solid 1px;
 
         @media screen and (max-width: $grid-breakpoint-sm){
          
-        width:100%;
+        width:90%;
         font-size: $font-size1;     
-        margin-left:0;
+        margin-left:5%;
+        
 
 
+        }
+        @media screen and (max-width: $grid-breakpoint-xl){
+            width:90%;
+            margin-left:5%            
+          
         }
            
     &__name, &__phone, &__email, &__massage {
@@ -141,8 +148,12 @@ $font-size2: 2em;
         color: $color;
         background: $color1;
         border: 1px solid $color;
-       
+        @media screen and (max-width: $grid-breakpoint-sm) {
+        padding-top: 5%;
     }
+    
+}
+  
     /* Цвет в placeholder Chrome, Firefox, Opera, Safari 10.1+ */
 ::placeholder {
     color:$color;
@@ -157,7 +168,7 @@ $font-size2: 2em;
   /*Цвет в placeholder Microsoft Edge */
   ::-ms-input-placeholder {
     color:$color;
-  }
+  } 
     &__btn_send{
         width:40%;
         height: 2em;
@@ -170,10 +181,7 @@ $font-size2: 2em;
         
     &__btn_send:hover {
             cursor: pointer;
-            
-      }
-      
-    
-        }
+            }
+       }
 
     }
