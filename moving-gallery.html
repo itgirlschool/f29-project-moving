@@ -8,11 +8,106 @@
   <title>Project moving</title>
   <link rel="stylesheet" href="assets/styles/normalize.css">
   <link rel="stylesheet" href="assets/styles/main-styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
-  <style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-</style>
+  <style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Расположите контейнер с изображением (необходимо расположить стрелки влево и вправо) */
+.container {
+  position: relative;
+}
+
+/* Скрыть изображения по умолчанию */
+.mySlides {
+  display: none;
+}
+
+/* Добавление указателя при наведении указателя мыши на миниатюры изображений */
+.cursor {
+  cursor: pointer;
+}
+
+/* Вперед и назад кнопки */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Расположите кнопку "вперед" справа */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора мыши добавьте черный цвет фона с небольшим прозрачным слоем */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Номер текста (1/3 и т.д.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Контейнер для текста изображения */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Шесть колонн бок о бок */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Добавьте эффект прозрачности для миниатюрных изображений */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  </style>
 
 
 </head>
@@ -84,157 +179,175 @@
   </div>
   <!-- // MENU end  // -->
 
-        
 
 
-<div><p class="gallery_title">Галерея слайд-шоу</p></div>
 
-<div class="container_gallery gallery">
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">1 / 13</div>
+  <div>
+    <p class="gallery_title">Галерея слайд-шоу</p>
+  </div>
+
+  <div class="container_gallery gallery">
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">1 / 13</div>
       <img src="assets/Images/image1.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">2 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">2 / 13</div>
       <img src="./assets/Images/image2.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">3 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">3 / 13</div>
       <img src="./assets/Images/image3.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">4 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">4 / 13</div>
       <img src="./assets/Images/image4.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">5 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">5 / 13</div>
       <img src="./assets/Images/image5.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">6 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">6 / 13</div>
       <img src="./assets/Images/image6.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">7 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">7 / 13</div>
       <img src="./assets/Images/image7.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">8 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">8 / 13</div>
       <img src="./assets/Images/image8.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">9 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">9 / 13</div>
       <img src="./assets/Images/image9.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">10 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">10 / 13</div>
       <img src="./assets/Images/image10.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">11 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">11 / 13</div>
       <img src="./assets/Images/image11.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">12 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">12 / 13</div>
       <img src="./assets/Images/image12.jpeg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="gallery_mySlides">
-    <div class="gallery_numbertext">13 / 13</div>
+    <div class="gallery_mySlides">
+      <div class="gallery_numbertext">13 / 13</div>
       <img src="./assets/Images/image13.jpeg" style="width:100%">
-  </div>
-  <!-- Вперед и назад кнопки -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- Вперед и назад кнопки -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  <!-- Текст изображения -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+    <!-- Текст изображения -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
 
-  <!-- Миниатюры -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image1.jpeg" style="width:100%" height="50%" onclick="currentSlide(1)" alt=" Contact us +1 555 55 55">
+    <!-- Миниатюры -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image1.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(1)" alt=" Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image2.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(2)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image3.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(3)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image4.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(4)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image5.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(5)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image6.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(6)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image7.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(7)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image8.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(8)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image9.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(9)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image10.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(10)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image11.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(11)" alt="Contact us +1 555 55 55">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/Images/image12.jpeg" style="width:100%" height="80%"
+          onclick="currentSlide(12)" alt="Contact us +1 555 55 55">
+      </div>
+
     </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image2.jpeg" style="width:100%" height="50%" onclick="currentSlide(2)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image3.jpeg" style="width:100%" height="50%" onclick="currentSlide(3)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image4.jpeg" style="width:100%" height="50%" onclick="currentSlide(4)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image5.jpeg" style="width:100%" height="50%" onclick="currentSlide(5)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image6.jpeg" style="width:100%" height="50%" onclick="currentSlide(6)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image7.jpeg" style="width:100%" height="50%" onclick="currentSlide(7)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image8.jpeg" style="width:100%" height="50%" onclick="currentSlide(8)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image9.jpeg" style="width:100%" height="50%" onclick="currentSlide(9)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image10.jpeg" style="width:100%" height="50%" onclick="currentSlide(10)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image11.jpeg" style="width:100%" height="50%" onclick="currentSlide(11)" alt="Contact us +1 555 55 55">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="./assets/Images/image12.jpeg" style="width:100%" height="50%" onclick="currentSlide(12)" alt="Contact us +1 555 55 55">
-    </div>
-    
   </div>
-</div>
-<script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("gallery_mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("gallery_mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
+      }
+      for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
   </script>
-      
+
   <!-- // FOOTER start // -->
   <footer class="footer">
     <div class="footer__find">
@@ -252,7 +365,9 @@
     </div>
   </footer>
   <!-- // FOOTER end // -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
