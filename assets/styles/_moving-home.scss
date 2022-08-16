@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 html,
 body {
     height: 100vh;
@@ -17,13 +18,13 @@ body {
     // .container__home
     &__home {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         background-color: $main-background;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
-            grid-template-rows: 1fr 16em;
+            grid-template-rows: 1fr;
             grid-template-columns: 1fr;
             background-color: $main-background;
 
@@ -261,10 +262,6 @@ body {
 
 //!Strigo!//
 
-
-
-
-
 .about {
 
     // .about__details
@@ -404,13 +401,27 @@ body {
     }
 
 }
-
 //!Strigo!//
 
 .footer {
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
     color: $menu-color;
     font-size: $font-size-footer;
+    margin-top: 70em;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        margin-top: 20em;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
+        margin-top: 80em;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        margin-top: 20em;
+    }
 
     @media screen and (max-width: $grid-breakpoint-lg) {
         margin-left: 9em;
@@ -424,6 +435,8 @@ body {
     // .footer__find
     &__find {
         display: grid;
+        grid-template-rows: 1fr 1fr;//
+        grid-template-columns: 1fr;//
         color: $grey-background;
         background-color: $menu-burger-background;
 
@@ -431,7 +444,9 @@ body {
 
     &__header {
         display: grid;
-        justify-content: center;
+        grid-template-rows: 1fr;//
+        grid-template-columns: 1fr;//
+        justify-items: center;
         align-items: center;
         height: 2em;
         grid-row: 1;
@@ -440,6 +455,10 @@ body {
 
     // .footer__social
     &__social {
+        //display: grid;
+        //grid-template-rows: 1fr;//
+        //grid-template-columns: 1fr 1fr 1fr;//
+        //justify-self: center;//
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -457,7 +476,10 @@ body {
 
     // .footer__copyright
     &__copyright {
-        display: flex;
+        display: grid;
+        //diplay: flex;
+        grid-template-rows: 1fr;//
+        grid-template-columns: 1fr;// 
         justify-content: center;
         align-items: center;
         text-align: center;
