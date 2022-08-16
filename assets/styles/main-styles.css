@@ -31,7 +31,7 @@ footer {
   /*Общий контейнер странички*/
   box-sizing: border-box;
   width: 100wv;
-  height: 80hv;
+  height: 100hv;
   background: #000;
   color: white;
   text-align: center;
@@ -117,27 +117,26 @@ footer {
   display: grid;
   box-sizing: border-box;
   width: 50%;
-  height: 60vh;
+  height: 90%;
   margin-left: 25%;
   font-size: 2em;
   justify-self: center;
-  align-content: space-around;
-  border: red solid 1px;
+  gap: 0.4em;
   /* Цвет в placeholder Chrome, Firefox, Opera, Safari 10.1+ */
   /*Цвет в placeholder Internet Explorer 10-11 */
   /*Цвет в placeholder Microsoft Edge */
 }
-@media screen and (max-width: 576px) {
-  .contactform {
-    width: 90%;
-    font-size: 1.5em;
-    margin-left: 5%;
-  }
-}
 @media screen and (max-width: 1200px) {
   .contactform {
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactform {
+    width: 70%;
+    font-size: 1.5em;
+    gap: 0.6em;
   }
 }
 .contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
@@ -146,6 +145,11 @@ footer {
   color: white;
   background: rgb(60, 58, 58);
   border: 1px solid white;
+}
+@media screen and (max-width: 1200px) {
+  .contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
+    height: 2em;
+  }
 }
 @media screen and (max-width: 576px) {
   .contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
