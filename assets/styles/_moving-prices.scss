@@ -1,0 +1,42 @@
+.price{
+
+    // .about__name //
+    &__name {
+        display: grid;
+        grid-template-rows: 8em 1fr 8em;
+        grid-template-columns: 1fr;
+        max-width: inherit;
+        position: relative;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: 1fr;
+            max-width: inherit;
+            position: relative;    
+        }
+    }
+
+    // .about__info
+    &__text {
+        display: grid;
+        margin:auto;
+        color: $text-color;
+        text-align: center;
+        align-items: center;
+        line-height: 30px;
+        font-size: $font-size-home;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: grid;
+            color: $text-color;
+            text-align: center;
+            align-items: center;
+            line-height: 30px;
+    
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: $font-size-home-mobile;
+            margin-bottom: 0;
+        }    
+    }
