@@ -29,8 +29,8 @@ html, body {
         grid-template-rows: repeate (7, 1fr);
         grid-template-columns: 1fr;
         // color: $menu-color;
-        margin-left: 20em;
-        margin-right: 20em;
+        margin-left: 23em;
+        margin-right: 23em;
         margin-top: 0;
 
         @media screen and (max-width: $grid-breakpoint-md) {
@@ -38,7 +38,7 @@ html, body {
             background-color: $main-background;
             grid-template-rows: repeate (7, 1fr);
             grid-template-columns: 1fr;
-            // color: $menu-color;
+          
             margin-left: 2em;
             margin-right: 2em;
             margin-top: 0;
@@ -51,11 +51,34 @@ html, body {
             grid-template-rows: repeate (7, 1fr);
             grid-template-columns: 1fr;
                 
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-top: 0;
+            font-size: $font-size-home;
+            }  
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: grid;
+            background-color: $main-background;
+            grid-template-rows: repeate (7, 1fr);
+            grid-template-columns: 1fr;
+                    
             margin-left: 8em;
             margin-right: 8em;
             margin-top: 0;
             font-size: $font-size-home;
-            }  
+            } 
+
+        @media screen and (max-width: $grid-breakpoint-xl) {
+            display: grid;
+            background-color: $main-background;
+            grid-template-rows: repeate (7, 1fr);
+            grid-template-columns: 1fr;
+                        
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-top: 0;
+            font-size: $font-size-home;   
     }
 
 }
@@ -65,11 +88,44 @@ html, body {
 
     &__img {
         width: 100%;
+       
         // max-width: 100%;
         // overflow: hidden;
         // margin: 1em 0 0em 0;
         margin-bottom: 0;
         margin-top:0 ;
+        overflow: hidden;
+        height: auto;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            width: 100%;
+            max-width: 768px;
+            
+            margin-bottom: 0;
+            margin-top:0 ;
+            overflow: hidden;
+            height: auto;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            width: 100%;
+            max-width: 992px;
+            
+            margin-bottom: 0;
+            margin-top:0 ;
+            overflow: hidden;
+            height: auto;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            width: 100%;
+            max-width: 576px;
+           
+            margin-bottom: 0;
+            margin-top:0 ;
+            overflow: hidden;
+            height: auto;
+        }
     }
     &__block {
         display: grid;
@@ -89,16 +145,26 @@ html, body {
 
     &__subtitle {
         text-align: left;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bolder;
         color: $menu-color;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+        text-align: left;
+        font-size: 50px;
+        font-weight: bolder;
+        color: $menu-color;
+        }
+        
+       
     }
+
 
     // .main__item
 
     &__item {
         text-align: left;
-        font-size: 25px;
+        font-size: 20px;
         color: $menu-color;
        
     }
