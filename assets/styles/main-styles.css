@@ -2,7 +2,12 @@
 /*Это итоговый файл со стилями, тут никакой код не пишем!!! только подключения других файлов*/ /*Тут переменные, общие для всего проекта*/
 /* Оригинальные переменные HOMEPAGE  */
 /* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
-* {
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
   box-sizing: border-box;
 }
 
@@ -12,7 +17,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #000;
+  background-color: #0C0B0B;
+  color: #cdcdcd;
 }
 
 a {
@@ -186,20 +192,6 @@ footer {
 }
 .contactform__btn_send__btn_send:hover {
   cursor: pointer;
-}
-
-*:before,
-*:after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100vh;
-  background-color: #0C0B0B;
 }
 
 .container__home {
@@ -730,12 +722,6 @@ body {
   transform: none;
 }
 
-html,
-body {
-  height: 100vh;
-  background-color: #0C0B0B;
-}
-
 .container__services {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -803,7 +789,8 @@ body {
     font-size: 20px;
   }
 }
-.about .main__img {
+
+.main__img {
   width: 100%;
   margin-bottom: 0;
   margin-top: 0;
@@ -811,7 +798,7 @@ body {
   height: auto;
 }
 @media screen and (max-width: 768px) {
-  .about .main__img {
+  .main__img {
     width: 100%;
     max-width: 768px;
     margin-bottom: 0;
@@ -821,7 +808,7 @@ body {
   }
 }
 @media screen and (max-width: 992px) {
-  .about .main__img {
+  .main__img {
     width: 100%;
     max-width: 992px;
     margin-bottom: 0;
@@ -831,7 +818,7 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
-  .about .main__img {
+  .main__img {
     width: 100%;
     max-width: 576px;
     margin-bottom: 0;
@@ -840,49 +827,35 @@ body {
     height: auto;
   }
 }
-.about .main__block {
+.main__block {
   display: grid;
   color: white;
 }
-.about .main__title {
+.main__title {
   text-align: center;
   color: #cdcdcd;
   font-size: 20px;
   align-items: center;
   display: grid;
 }
-.about .main__subtitle {
+.main__subtitle {
   text-align: left;
   font-size: 25px;
   font-weight: bolder;
   color: white;
 }
 @media screen and (max-width: 768px) {
-  .about .main__subtitle {
+  .main__subtitle {
     text-align: left;
     font-size: 50px;
     font-weight: bolder;
     color: white;
   }
 }
-.about .main__item {
+.main__item {
   text-align: left;
   font-size: 20px;
   color: white;
-}
-
-*:before,
-*:after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100vh;
-  background-color: #0C0B0B;
 }
 
 .container__home {
