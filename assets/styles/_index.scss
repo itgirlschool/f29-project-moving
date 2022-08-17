@@ -190,15 +190,15 @@
 
 
 
-// .main__heding
 
 
 
 
 
-.main {
 
-    // .main__text
+.start {
+
+    // .start__text
 
     &__text {
         color: white;
@@ -211,7 +211,7 @@
         }
     }
 
-    // .main__img
+    // .start__img
 
     &__img {
         height: auto;
@@ -219,7 +219,7 @@
         object-fit: contain;
     }
 
-    // .main__advantages
+    // .start__advantages
 
     &__advantages {
         display: grid;
