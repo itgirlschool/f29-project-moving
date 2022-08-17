@@ -1530,24 +1530,24 @@ body {
   }
 }
 
-.main__text {
+.start__text {
   color: white;
   font-size: 20px;
   text-align: center;
   margin: 2em;
 }
 @media screen and (max-width: 576px) {
-  .main__text {
+  .start__text {
     margin: 1em;
   }
 }
-.main__img {
+.start__img {
   height: auto;
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.main__advantages {
+.start__advantages {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 4em 1fr 1fr;
@@ -1558,7 +1558,7 @@ body {
   justify-items: center;
 }
 @media screen and (max-width: 768px) {
-  .main__advantages {
+  .start__advantages {
     grid-template-columns: 1fr;
     grid-template-rows: 2em repeat(4 1fr);
     margin: 0;
