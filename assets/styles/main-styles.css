@@ -1110,11 +1110,30 @@ body {
 }
 
 /*Здесь надо писать стили для moving-gallery*/
-.gallery {
+.gallery { /*Стили для контейнера*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   box-sizing: border-box;
+}
+.gallery_title { /*Стили для заголовка стр*/
+  display: grid;
+  grid-row: 1fr;
+  color: #cdcdcd;
+  font-size: 3em;
+  text-shadow: black;
+  justify-content: center;
+  padding: 2%;
+}
+@media screen and (max-width: 768px) {
+  .gallery_title {
+    display: grid;
+    color: #cdcdcd;
+    font-size: 2em;
+    text-shadow: black;
+    justify-content: center;
+    padding: 2%;
+  }
 }
 .gallery_img {
   transform: scale(0.8); /*Webkit: уменьшаем размер до 0.8*/

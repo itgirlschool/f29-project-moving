@@ -1,11 +1,29 @@
 /*Здесь надо писать стили для moving-gallery*/
-.gallery{
+.gallery{/*Стили для контейнера*/
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
     box-sizing: border-box;
 
+    &_title{ /*Стили для заголовка стр*/
+    display: grid;
+    grid-row: 1fr;
+    color:$text-color;
+    font-size:3em;
+    text-shadow:black;
+    justify-content: center;
+    padding: 2%;
 
+    @media screen and (max-width: $grid-breakpoint-md) {
+    display: grid;
+    color:$text-color;
+    font-size:2em;
+    text-shadow:black;
+    justify-content: center;
+    padding: 2%;
+
+    }
+    }
 &_img {
     transform: scale(0.8);/*Webkit: уменьшаем размер до 0.8*/
     -moz-transform: scale(0.8);/*Mozilla: масштабирование*/
@@ -27,3 +45,4 @@
     opacity: 1;
 }
 }
+
