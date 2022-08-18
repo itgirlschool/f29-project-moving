@@ -6,7 +6,7 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
-        background-color: $main-background;
+        background-color: $color-main;
         margin-top: 1em;
         margin-bottom: 4em;
         position: relative;
@@ -20,7 +20,7 @@
 
     &__services {
         display: grid;
-        background-color: $main-background;
+        background-color: $color-main;
         grid-template-rows: repeate (7, 1fr);
         grid-template-columns: 1fr;
         // color: $menu-color;
@@ -30,7 +30,7 @@
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
-            background-color: $main-background;
+            background-color: $color-main;
             grid-template-rows: repeate (7, 1fr);
             grid-template-columns: 1fr;
 
@@ -42,7 +42,7 @@
 
         @media screen and (max-width: $grid-breakpoint-lg) {
             display: grid;
-            background-color: $main-background;
+            background-color: $color-main;
             grid-template-rows: repeate (7, 1fr);
             grid-template-columns: 1fr;
 
@@ -54,7 +54,7 @@
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
-            background-color: $main-background;
+            background-color: $color-main;
             grid-template-rows: repeate (7, 1fr);
             grid-template-columns: 1fr;
 
@@ -66,7 +66,7 @@
 
         @media screen and (max-width: $grid-breakpoint-xl) {
             display: grid;
-            background-color: $main-background;
+            background-color: $color-main;
             grid-template-rows: repeate (7, 1fr);
             grid-template-columns: 1fr;
 
