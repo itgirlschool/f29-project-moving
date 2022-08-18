@@ -191,10 +191,6 @@ footer {
   border: 1px solid white;
   cursor: pointer;
 }
-.contactform__btn_send__btn_send:hover {
-  color: aliceblue;
-  background-color: azure;
-}
 
 .container__services {
   display: grid;
