@@ -15,7 +15,7 @@ $color-main: #000;
 $container-max-width: 1296px;
 
 /* Оригинальные переменные HOMEPAGE  */
-$main-background: #0C0B0B;
+//$main-background: #0C0B0B;
 $grey-background: #282828;
 $burger-color: #232323;
 $text-color: #cdcdcd;
@@ -26,17 +26,15 @@ $menu-burger-active-item: tomato;
 $font-size-home: 20px;
 $font-size-home-mobile: 22px;
 $font-size-footer: 16px;
+$font-size-logo: 32px;
+$font-size-text-about: 26px;
 
 /* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
 
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    border: 0;
+* {
     box-sizing: border-box;
 }
+
 
 html,
 body {
@@ -44,8 +42,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: $font-family-sans-serif;
-    background-color: $main-background;
-    color: $text-color;
+    color: $color-main;
 }
 
 
