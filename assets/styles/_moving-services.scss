@@ -3,9 +3,7 @@
     // .container__services
 
     &__services {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+
         background-color: $color-main;
         margin-top: 1em;
         margin-bottom: 4em;
