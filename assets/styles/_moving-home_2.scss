@@ -390,8 +390,6 @@ body {
     // .about__text
     &__text {
         display: grid;
-        margin-left: 2rem;
-        margin-right: 2rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
         color: $text-color;
@@ -430,8 +428,6 @@ body {
             text-align: center;
             align-items: center;
             line-height: 34px;
-            margin-left: 2rem;
-            margin-right: 2rem;
             font-size: $font-size-text-about;
             margin-bottom: 0;
         }

@@ -696,8 +696,6 @@ body {
 }
 .about__text {
   display: grid;
-  margin-left: 2rem;
-  margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #cdcdcd;
@@ -739,8 +737,6 @@ body {
     text-align: center;
     align-items: center;
     line-height: 34px;
-    margin-left: 2rem;
-    margin-right: 2rem;
     font-size: 26px;
     margin-bottom: 0;
   }
