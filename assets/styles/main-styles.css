@@ -156,6 +156,7 @@ footer {
 @media screen and (max-width: 576px) {
   .contactform__name, .contactform__phone, .contactform__email, .contactform__message {
     padding-top: 5%;
+    margin-left: 10%;
   }
 }
 .contactform ::-moz-placeholder {
