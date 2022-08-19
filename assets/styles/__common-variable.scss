@@ -58,3 +58,13 @@ footer {
     max-width: $container-max-width;
     margin: 0 auto;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
