@@ -27,6 +27,16 @@ footer {
   margin: 0 auto;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
 /* здесь надо писать стили для файла moving-form.html */
 .movingform {
   /*Общий контейнер странички*/
@@ -156,7 +166,6 @@ footer {
 @media screen and (max-width: 576px) {
   .contactform__name, .contactform__phone, .contactform__email, .contactform__message {
     padding-top: 5%;
-    margin-left: 10%;
   }
 }
 .contactform ::-moz-placeholder {
@@ -564,7 +573,7 @@ body {
     grid-template-rows: 1fr 1fr;
     justify-items: right;
     font-size: 20px;
-    padding-right: 0;
+    padding-right: 30px;
     font-size: 22px;
     margin-top: 1rem;
     margin-right: 0.5rem;
@@ -719,14 +728,13 @@ body {
 }
 .about__text {
   display: grid;
-  margin-left: 2rem;
-  margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #cdcdcd;
   text-align: center;
   align-items: center;
   line-height: 30px;
+  padding: 0 1rem;
   font-size: 20px;
 }
 @media screen and (max-width: 768px) {
@@ -736,8 +744,6 @@ body {
     text-align: center;
     align-items: center;
     line-height: 30px;
-    margin-left: 2rem;
-    margin-right: 2rem;
     font-size: 22px;
     margin-bottom: 0;
     margin-top: 2rem;
@@ -764,8 +770,6 @@ body {
     text-align: center;
     align-items: center;
     line-height: 34px;
-    margin-left: 2rem;
-    margin-right: 2rem;
     font-size: 26px;
     margin-bottom: 0;
   }
@@ -1091,6 +1095,7 @@ body {
   top: 19rem;
   left: 30px;
   z-index: 1;
+  max-width: 90%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1219,4 +1224,42 @@ body {
   -webkit-box-shadow: 0px 0px 30px gray; /*Webkit: тени*/
   -moz-box-shadow: 0px 0px 30px gray; /*Mozilla: тени*/
   opacity: 1;
+}
+
+.prices {
+  background: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em;
+  font-size: 18px;
+}
+.prices__local {
+  max-width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.prices__local_img {
+  width: 60px;
+  height: 60px;
+}
+.prices__local_money {
+  border: 1px solid black;
+  width: 50%;
+  max-width: 768px;
+  min-width: 200px;
+  margin: 2em auto;
+}
+.prices__long {
+  max-width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.prices__long_img {
+  width: 80px;
+  height: 60px;
+}
+.prices__long_money {
+  border: 1px solid black;
+  width: 100%;
+  margin: 2em auto;
 }/*# sourceMappingURL=main-styles.css.map */
