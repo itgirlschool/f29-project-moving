@@ -450,6 +450,8 @@ body {
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             margin: 2rem 0 0 0;
+            width:80%;
+            justify-self: center;
         }
     }
 }
@@ -471,6 +473,8 @@ body {
             margin-left: 0;
             margin-right: 0;
             margin-top: 1rem;
+            width:90%;
+            justify-self: center;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -480,6 +484,8 @@ body {
             margin-left: 0;
             margin-right: 0;
             margin-top: 1rem;
+            width:80%;
+            justify-self: center;
         }
     }
 
@@ -626,6 +632,10 @@ body {
         grid-template-columns: 1fr;
         color: $grey-background;
         background-color: $menu-burger-background;
+        @media screen and (max-width: $grid-breakpoint-sm){
+            width:80%;
+            justify-self: center;
+        }
     }
 
     &__header {

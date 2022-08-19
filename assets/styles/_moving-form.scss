@@ -141,6 +141,8 @@ $font-size2: 1.5em;
         width: 70%;
         font-size: $font-size1;
         gap: 0.6em;
+        
+       
     }
 
     &__name,
@@ -159,6 +161,7 @@ $font-size2: 1.5em;
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             padding-top: 5%;
+            margin-left: 10%; 
         }
     }
 

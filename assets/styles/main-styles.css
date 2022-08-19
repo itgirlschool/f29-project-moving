@@ -156,6 +156,7 @@ footer {
 @media screen and (max-width: 576px) {
   .contactform__name, .contactform__phone, .contactform__email, .contactform__message {
     padding-top: 5%;
+    margin-left: 10%;
   }
 }
 .contactform ::-moz-placeholder {
@@ -770,6 +771,8 @@ body {
 @media screen and (max-width: 576px) {
   .about__img {
     margin: 2rem 0 0 0;
+    width: 80%;
+    justify-self: center;
   }
 }
 
@@ -788,6 +791,8 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-top: 1rem;
+    width: 90%;
+    justify-self: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -798,6 +803,8 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-top: 1rem;
+    width: 80%;
+    justify-self: center;
   }
 }
 .about__blocks_top {
@@ -939,6 +946,12 @@ body {
   grid-template-columns: 1fr;
   color: #282828;
   background-color: #ededed;
+}
+@media screen and (max-width: 576px) {
+  .footer__find {
+    width: 80%;
+    justify-self: center;
+  }
 }
 .footer__header {
   display: grid;
