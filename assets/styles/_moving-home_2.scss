@@ -396,6 +396,7 @@ body {
         text-align: center;
         align-items: center;
         line-height: 30px;
+        padding: 0 1rem;
         font-size: $font-size-home;
 
         @media screen and (max-width: $grid-breakpoint-md) {
