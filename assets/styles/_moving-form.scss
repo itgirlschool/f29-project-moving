@@ -2,14 +2,13 @@
 
 
 $color: white;
-$color1: rgb(60, 58, 58);
+$color1: rgb(127, 124, 124);
 $container-width: 100wv;
 $container-height: 100hv;
 $main-color: #000;
 $font-size-sm: .7em;
-$font-size1: 1.5em;
-$font-size3: 3em;
-$font-size2: 2em;
+$font-size1: 1.2em;
+$font-size2: 1.5em;
 
 
 .movingform {
@@ -20,25 +19,26 @@ $font-size2: 2em;
     background: $main-color ;
     color: $color;
     text-align: center;
-    font-family: $font-family-serif ;
+    font-family: $font-family-sans-serif ;
 }
 
 
 .info {
     /*Информация адрес и часы работы*/
     display: grid;
-    grid-template-rows: 2fr repeat(14, 1fr);
+    grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(7, 1fr);
     box-sizing: border-box;
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         display: grid;
-        grid-template-rows: 1fr repeat(14, 0.5fr);
+        grid-template-rows: 2fr repeat(5, 0.5fr) 1fr repeat(7, 0.5fr);
         font-size: $font-size-sm
     }
 
     &_header {
         grid-row: 1/2;
-        font-size: $font-size3
+        font-size: $font-size2;
+        
     }
 
     &_address {
@@ -71,7 +71,9 @@ $font-size2: 2em;
 
     &_time {
         grid-row: 7/8;
-        font-size: $font-size2
+        font-size: $font-size2;
+        align-self: end;
+    
     }
 
     &_mon {
@@ -144,11 +146,11 @@ $font-size2: 2em;
     &__name,
     &__phone,
     &__email,
-    &__massage {
+    &__message {
         border: 1px solid $color;
         border-radius: 8px;
         color: $color;
-        background: $color1;
+        background: $main-color;
         border: 1px solid $color;
 
         @media screen and (max-width: $grid-breakpoint-xl) {
@@ -162,18 +164,21 @@ $font-size2: 2em;
 
     /* Цвет в placeholder Chrome, Firefox, Opera, Safari 10.1+ */
     ::placeholder {
-        color: $color;
+        color: $color1;
         opacity: 1;
+        font-style: italic;
     }
 
     /*Цвет в placeholder Internet Explorer 10-11 */
     :-ms-input-placeholder {
-        color: $color;
+        color: $color1;
+        font-style: italic;
     }
 
     /*Цвет в placeholder Microsoft Edge */
     ::-ms-input-placeholder {
-        color: $color;
+        color: $color1;
+        font-style: italic;
     }
 
     &__btn_send {
@@ -181,12 +186,9 @@ $font-size2: 2em;
         height: 2em;
         margin-left: 30%;
         color: $color;
-        background: $color1;
+        background: $main-color;
         border-radius: 8px;
         border: 1px solid $color;
-
-        &__btn_send:hover {
-            cursor: pointer;
+        cursor: pointer;
         }
-    }
 }

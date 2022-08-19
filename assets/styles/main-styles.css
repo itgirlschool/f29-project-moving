@@ -36,81 +36,82 @@ footer {
   background: #000;
   color: white;
   text-align: center;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .info {
   /*Информация адрес и часы работы*/
   display: grid;
-  grid-template-rows: 2fr repeat(14, 1fr);
+  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(7, 1fr);
   box-sizing: border-box;
 }
 @media screen and (max-width: 576px) {
   .info {
     display: grid;
-    grid-template-rows: 1fr repeat(14, 0.5fr);
+    grid-template-rows: 2fr repeat(5, 0.5fr) 1fr repeat(7, 0.5fr);
     font-size: 0.7em;
   }
 }
 .info_header {
   grid-row: 1/2;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 .info_address {
   grid-row: 2/3;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .info_address1 {
   grid-row: 3/4;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_email1 {
   grid-row: 4/5;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_address2 {
   grid-row: 5/6;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_email2 {
   grid-row: 6/7;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_time {
   grid-row: 7/8;
-  font-size: 2em;
+  font-size: 1.5em;
+  align-self: end;
 }
 .info_mon {
   grid-row: 8/9;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_tue {
   grid-row: 9/10;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_wed {
   grid-row: 10/11;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_thu {
   grid-row: 11/12;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_fri {
   grid-row: 12/13;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_sat {
   grid-row: 13/14;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_sun {
   grid-row: 14/15;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .info_text {
   grid-row: 15/16;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .contactform {
@@ -120,7 +121,7 @@ footer {
   width: 50%;
   height: 90%;
   margin-left: 25%;
-  font-size: 2em;
+  font-size: 1.5em;
   justify-self: center;
   gap: 0.4em;
   /* Цвет в placeholder Chrome, Firefox, Opera, Safari 10.1+ */
@@ -136,55 +137,58 @@ footer {
 @media screen and (max-width: 576px) {
   .contactform {
     width: 70%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     gap: 0.6em;
   }
 }
-.contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
+.contactform__name, .contactform__phone, .contactform__email, .contactform__message {
   border: 1px solid white;
   border-radius: 8px;
   color: white;
-  background: rgb(60, 58, 58);
+  background: #000;
   border: 1px solid white;
 }
 @media screen and (max-width: 1200px) {
-  .contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
+  .contactform__name, .contactform__phone, .contactform__email, .contactform__message {
     height: 2em;
   }
 }
 @media screen and (max-width: 576px) {
-  .contactform__name, .contactform__phone, .contactform__email, .contactform__massage {
+  .contactform__name, .contactform__phone, .contactform__email, .contactform__message {
     padding-top: 5%;
   }
 }
 .contactform ::-moz-placeholder {
-  color: white;
+  color: rgb(127, 124, 124);
   opacity: 1;
+  font-style: italic;
 }
 .contactform :-ms-input-placeholder {
-  color: white;
+  color: rgb(127, 124, 124);
   opacity: 1;
+  font-style: italic;
 }
 .contactform ::placeholder {
-  color: white;
+  color: rgb(127, 124, 124);
   opacity: 1;
+  font-style: italic;
 }
 .contactform :-ms-input-placeholder {
-  color: white;
+  color: rgb(127, 124, 124);
+  font-style: italic;
 }
 .contactform ::-ms-input-placeholder {
-  color: white;
+  color: rgb(127, 124, 124);
+  font-style: italic;
 }
 .contactform__btn_send {
   width: 40%;
   height: 2em;
   margin-left: 30%;
   color: white;
-  background: rgb(60, 58, 58);
+  background: #000;
   border-radius: 8px;
   border: 1px solid white;
-}
-.contactform__btn_send__btn_send:hover {
   cursor: pointer;
 }
 
