@@ -42,76 +42,77 @@ footer {
 .info {
   /*Информация адрес и часы работы*/
   display: grid;
-  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(7, 1fr);
+  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(6, 1fr) 2fr;
   box-sizing: border-box;
+  font-size: 26px;
 }
 @media screen and (max-width: 576px) {
   .info {
     display: grid;
-    grid-template-rows: 2fr repeat(5, 0.5fr) 1fr repeat(7, 0.5fr);
-    font-size: 0.7em;
+    grid-template-rows: 2fr repeat(5, 0.5fr) 1fr repeat(6, 0.5fr) 1fr;
+    font-size: 20px;
   }
 }
 .info_header {
   grid-row: 1/2;
-  font-size: 1.5em;
+  font-size: 32px;
 }
 .info_address {
   grid-row: 2/3;
-  font-size: 1.5em;
+  font-size: 26px;
 }
 .info_address1 {
   grid-row: 3/4;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_email1 {
   grid-row: 4/5;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_address2 {
   grid-row: 5/6;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_email2 {
   grid-row: 6/7;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_time {
   grid-row: 7/8;
-  font-size: 1.5em;
+  font-size: 26px;
   align-self: end;
 }
 .info_mon {
   grid-row: 8/9;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_tue {
   grid-row: 9/10;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_wed {
   grid-row: 10/11;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_thu {
   grid-row: 11/12;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_fri {
   grid-row: 12/13;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_sat {
   grid-row: 13/14;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_sun {
   grid-row: 14/15;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 .info_text {
   grid-row: 15/16;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 
 .contactform {
@@ -121,7 +122,7 @@ footer {
   width: 50%;
   height: 90%;
   margin-left: 25%;
-  font-size: 1.5em;
+  font-size: 26px;
   justify-self: center;
   gap: 0.4em;
   /* Цвет в placeholder Chrome, Firefox, Opera, Safari 10.1+ */
@@ -137,7 +138,7 @@ footer {
 @media screen and (max-width: 576px) {
   .contactform {
     width: 70%;
-    font-size: 1.2em;
+    font-size: 20px;
     gap: 0.6em;
   }
 }
@@ -157,6 +158,16 @@ footer {
   .contactform__name, .contactform__phone, .contactform__email, .contactform__message {
     padding-top: 5%;
   }
+}
+.contactform ::-moz-placeholder {
+  color: rgb(127, 124, 124);
+  opacity: 1;
+  font-style: italic;
+}
+.contactform :-ms-input-placeholder {
+  color: rgb(127, 124, 124);
+  opacity: 1;
+  font-style: italic;
 }
 .contactform ::placeholder {
   color: rgb(127, 124, 124);
@@ -1009,7 +1020,10 @@ body {
   left: 30px;
   z-index: 1;
   max-width: 90%;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #menuToggle a {
@@ -1122,16 +1136,13 @@ body {
 .gallery_img {
   transform: scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
   -moz-transform: scale(0.8); /*Mozilla: масштабирование*/
-  --o-transform: scale(0.8); /*Opera: масштабирование*/
-  -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+  --o-transform: scale(0.8); /*Opera: масштабирование*/ /*Webkit: длительность анимации*/
   transition-duration: 0.5s; /*Mozilla: длительность анимации*/
   -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
   opacity: 0.7; /*Начальная прозрачность изображений*/
   margin: 0 10px 5px 0; /*Интервалы между изображениями*/
 }
-.gallery_img:hover {
-  -webkit-transform: scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
-  -moz-transform: scale(1.1); /*Mozilla: масштабирование*/
+.gallery_img:hover { /*Webkit: увеличиваем размер до 1.2x*/ /*Mozilla: масштабирование*/
   transform: scale(1.1); /*Opera: масштабирование*/
   box-shadow: 0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
   -webkit-box-shadow: 0px 0px 30px gray; /*Webkit: тени*/
@@ -1159,6 +1170,4 @@ body {
 .prices__long_img {
   width: 80px;
   height: 60px;
-}
-
-/*# sourceMappingURL=main-styles.css.map */
+}/*# sourceMappingURL=main-styles.css.map */
