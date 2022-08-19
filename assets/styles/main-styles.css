@@ -1120,20 +1120,27 @@ body {
 .gallery_title { /*Стили для заголовка стр*/
   display: grid;
   grid-row: 1fr;
-  color: #cdcdcd;
-  font-size: 3em;
-  text-shadow: black;
   justify-content: center;
   padding: 2%;
+  text-align: center;
+  color: #cdcdcd;
+  font-size: 32px;
 }
 @media screen and (max-width: 768px) {
   .gallery_title {
     display: grid;
     color: #cdcdcd;
-    font-size: 2em;
+    font-size: 32px;
     text-shadow: black;
     justify-content: center;
     padding: 2%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .gallery_title {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .gallery_img {
