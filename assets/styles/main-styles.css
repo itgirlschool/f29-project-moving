@@ -297,12 +297,19 @@ footer {
   display: grid;
   color: white;
 }
+@media screen and (max-width: 576px) {
+  .main__block {
+    display: grid;
+    color: white;
+  }
+}
 .main__title {
   text-align: center;
   color: #cdcdcd;
   font-size: 20px;
   align-items: center;
   display: grid;
+  margin-top: -3em;
 }
 .main__subtitle {
   text-align: left;
@@ -318,10 +325,13 @@ footer {
     color: white;
   }
 }
-.main__item {
-  text-align: left;
-  font-size: 20px;
-  color: white;
+@media screen and (max-width: 576px) {
+  .main__subtitle {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+  }
 }
 
 *:before,

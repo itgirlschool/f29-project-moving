@@ -128,6 +128,12 @@
     &__block {
         display: grid;
         color: $menu-color;
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: grid;
+            color: $menu-color;
+
+        }
     }
 
     // .main__title
@@ -138,6 +144,7 @@
         font-size: $font-size-home;
         align-items: center;
         display: grid;
+        margin-top: -3em;
     }
 
     // .main__subtitle
@@ -155,16 +162,17 @@
             color: $menu-color;
         }
 
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            text-align: left;
+            font-size: 28px;
+            font-weight: bolder;
+            color: $menu-color;
+        }
+
+
 
     }
 
 
-    // .main__item
 
-    &__item {
-        text-align: left;
-        font-size: 20px;
-        color: $menu-color;
-
-    }
 }
