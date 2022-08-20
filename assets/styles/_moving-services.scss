@@ -145,6 +145,12 @@
         align-items: center;
         display: grid;
         margin-top: -3em;
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            color: $text-color;
+            font-size: 20px;
+
+        }
     }
 
     // .main__subtitle
@@ -164,7 +170,7 @@
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             text-align: left;
-            font-size: 28px;
+            font-size: 20px;
             font-weight: bolder;
             color: $menu-color;
         }
