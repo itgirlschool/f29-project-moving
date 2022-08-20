@@ -1,43 +1,39 @@
 /*Здесь надо писать стили для moving-gallery*/
 .gallery{/*Стили для контейнера*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    box-sizing: border-box;
 
-    .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            box-sizing: border-box;
-        }
+    &_title{ /*Стили для заголовка стр*/
+    display: grid;
+    grid-row: 1fr;
+    color:$text-color;
+    font-size:3em;
+    text-shadow:black;
+    justify-content: center;
+    padding: 2%;
 
-        .gallery_title {
-            display: grid;
-            grid-row: 1fr;
-            color: aliceblue;
-            font-size: 3em;
-            text-shadow: black;
-            justify-content: center;
-            padding: 2%;
+    @media screen and (max-width: $grid-breakpoint-md) {
+    display: grid;
+    color:$text-color;
+    font-size:2em;
+    text-shadow:black;
+    justify-content: center;
+    padding: 2%;
 
-        }
-
-        .gallery img {
-            display: grid;
-            transform: scale(0.8);
-            /*Webkit: уменьшаем размер до 0.8*/
-            -moz-transform: scale(0.8);
-            /*Mozilla: масштабирование*/
-            --o-transform: scale(0.8);
-            /*Opera: масштабирование*/
-            -webkit-transition-duration: 0.5s;
-            /*Webkit: длительность анимации*/
-            transition-duration: 0.5s;
-            /*Mozilla: длительность анимации*/
-            -o-transition-duration: 0.5s;
-            /*Opera: длительность анимации*/
-            opacity: 0.7;
-            /*Начальная прозрачность изображений*/
-            margin: 0 10px 5px 0;
-            /*Интервалы между изображениями*/
-        }
+    }
+    }
+&_img {
+    transform: scale(0.8);/*Webkit: уменьшаем размер до 0.8*/
+    -moz-transform: scale(0.8);/*Mozilla: масштабирование*/
+    --o-transform: scale(0.8);/*Opera: масштабирование*/
+    -webkit-transition-duration: 0.5s;/*Webkit: длительность анимации*/
+    transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+    -o-transition-duration: 0.5s;/*Opera: длительность анимации*/
+    opacity: 0.7;/*Начальная прозрачность изображений*/
+    margin: 0 10px 5px 0;/*Интервалы между изображениями*/
+}
 
         .gallery img:hover {
             -webkit-transform: scale(1.1);
