@@ -1,15 +1,14 @@
 .prices {
-    background: white;
+    background-color: black;
     text-align: center;
     margin: 0 auto;
-    padding: 2em;
     font-size: 18px;
 
 
     // .prices__local
 
     &__local {
-        max-width: 60%;
+
         min-width: 300px;
         margin: 0 auto;
 
@@ -45,7 +44,7 @@
     // .prices__long
 
     &__long {
-        max-width: 60%;
+
         min-width: 300px;
         margin: 0 auto;
 
@@ -63,13 +62,26 @@
         // .prices__long_money
 
         &_money {
-
             border: 1px solid black;
-            width: 100%;
+            width: 70%;
+            max-width: $grid-breakpoint-md;
+            min-width: 200px;
             margin: 2em auto;
 
         }
 
-
     }
+}
+
+.container__local,
+.container__long {
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10%;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.prices__heading {
+    color: white;
 }
