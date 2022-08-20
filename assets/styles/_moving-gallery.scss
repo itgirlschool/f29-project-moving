@@ -1,53 +1,68 @@
-/*Здесь надо писать стили для moving-gallery*/
-.gallery{/*Стили для контейнера*/
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    box-sizing: border-box;
+//Здесь надо писать стили для moving-gallery
 
-    &_title{ /*Стили для заголовка стр*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  box-sizing: border-box;
+
+  &_title {
     display: grid;
     grid-row: 1fr;
     color:$text-color;
-    font-size:3em;
-    text-shadow:black;
+    font-size: 32px;
+    text-shadow: black;
     justify-content: center;
     padding: 2%;
 
-    @media screen and (max-width: $grid-breakpoint-md) {
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  img {
     display: grid;
-    color:$text-color;
-    font-size:2em;
-    text-shadow:black;
-    justify-content: center;
-    padding: 2%;
+    transform: scale(0.8);
+    /*Webkit: уменьшаем размер до 0.8*/
+    -moz-transform: scale(0.8);
+    /*Mozilla: масштабирование*/
+    --o-transform: scale(0.8);
+    /*Opera: масштабирование*/
+    -webkit-transition-duration: 0.5s;
+    /*Webkit: длительность анимации*/
+    transition-duration: 0.5s;
+    /*Mozilla: длительность анимации*/
+    -o-transition-duration: 0.5s;
+    /*Opera: длительность анимации*/
+    opacity: 0.7;
+    /*Начальная прозрачность изображений*/
+    margin: 0 10px 5px 0;
+    /*Интервалы между изображениями*/
 
+    &:hover {
+      -webkit-transform: scale(1.1);
+      /*Webkit: увеличиваем размер до 1.2x*/
+      -moz-transform: scale(1.1);
+      /*Mozilla: масштабирование*/
+      transform: scale(1.1);
+      /*Opera: масштабирование*/
+      box-shadow: 0px 0px 30px gray;
+      /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+      -webkit-box-shadow: 0px 0px 30px gray;
+      /*Webkit: тени*/
+      -moz-box-shadow: 0px 0px 30px gray;
+      /*Mozilla: тени*/
+      opacity: 1;
     }
-    }
-&_img {
-    transform: scale(0.8);/*Webkit: уменьшаем размер до 0.8*/
-    -moz-transform: scale(0.8);/*Mozilla: масштабирование*/
-    --o-transform: scale(0.8);/*Opera: масштабирование*/
-    -webkit-transition-duration: 0.5s;/*Webkit: длительность анимации*/
-    transition-duration: 0.5s; /*Mozilla: длительность анимации*/
-    -o-transition-duration: 0.5s;/*Opera: длительность анимации*/
-    opacity: 0.7;/*Начальная прозрачность изображений*/
-    margin: 0 10px 5px 0;/*Интервалы между изображениями*/
+  }
+
+
 }
 
-        .gallery img:hover {
-            -webkit-transform: scale(1.1);
-            /*Webkit: увеличиваем размер до 1.2x*/
-            -moz-transform: scale(1.1);
-            /*Mozilla: масштабирование*/
-            transform: scale(1.1);
-            /*Opera: масштабирование*/
-            box-shadow: 0px 0px 30px gray;
-            /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
-            -webkit-box-shadow: 0px 0px 30px gray;
-            /*Webkit: тени*/
-            -moz-box-shadow: 0px 0px 30px gray;
-            /*Mozilla: тени*/
-            opacity: 1;
-        }}
+
+
+
+
 

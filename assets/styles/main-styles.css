@@ -1047,43 +1047,48 @@ body {
   transform: none;
 }
 
-/*Здесь надо писать стили для moving-gallery*/
-.gallery { /*Стили для контейнера*/
+.gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   box-sizing: border-box;
 }
-.gallery_title { /*Стили для заголовка стр*/
+.gallery_title {
   display: grid;
   grid-row: 1fr;
   color: #cdcdcd;
-  font-size: 3em;
+  font-size: 32px;
   text-shadow: black;
   justify-content: center;
   padding: 2%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .gallery_title {
-    display: grid;
-    color: #cdcdcd;
-    font-size: 2em;
-    text-shadow: black;
-    justify-content: center;
-    padding: 2%;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
-.gallery_img {
-  transform: scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
-  -moz-transform: scale(0.8); /*Mozilla: масштабирование*/
-  --o-transform: scale(0.8); /*Opera: масштабирование*/
-  -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
-  transition-duration: 0.5s; /*Mozilla: длительность анимации*/
-  -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
-  opacity: 0.7; /*Начальная прозрачность изображений*/
-  margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+.gallery img {
+  display: grid;
+  transform: scale(0.8);
+  /*Webkit: уменьшаем размер до 0.8*/
+  -moz-transform: scale(0.8);
+  /*Mozilla: масштабирование*/
+  --o-transform: scale(0.8);
+  /*Opera: масштабирование*/
+  -webkit-transition-duration: 0.5s;
+  /*Webkit: длительность анимации*/
+  transition-duration: 0.5s;
+  /*Mozilla: длительность анимации*/
+  -o-transition-duration: 0.5s;
+  /*Opera: длительность анимации*/
+  opacity: 0.7;
+  /*Начальная прозрачность изображений*/
+  margin: 0 10px 5px 0;
+  /*Интервалы между изображениями*/
 }
-.gallery .gallery img:hover {
+.gallery img:hover {
   -webkit-transform: scale(1.1);
   /*Webkit: увеличиваем размер до 1.2x*/
   -moz-transform: scale(1.1);
