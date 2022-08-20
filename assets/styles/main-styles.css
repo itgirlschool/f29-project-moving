@@ -1219,41 +1219,39 @@ body {
 .gallery .gallery_title {
   display: grid;
   grid-row: 1fr;
-  color: aliceblue;
+  color: #cdcdcd;
   font-size: 3em;
   text-shadow: black;
   justify-content: center;
   padding: 2%;
+  text-align: center;
+  color: #cdcdcd;
+  font-size: 32px;
 }
-.gallery .gallery img {
-  display: grid;
-  transform: scale(0.8);
-  /*Webkit: уменьшаем размер до 0.8*/
-  -moz-transform: scale(0.8);
-  /*Mozilla: масштабирование*/
-  --o-transform: scale(0.8);
-  /*Opera: масштабирование*/
-  /*Webkit: длительность анимации*/
-  transition-duration: 0.5s;
-  /*Mozilla: длительность анимации*/
-  -o-transition-duration: 0.5s;
-  /*Opera: длительность анимации*/
-  opacity: 0.7;
-  /*Начальная прозрачность изображений*/
-  margin: 0 10px 5px 0;
-  /*Интервалы между изображениями*/
+@media screen and (max-width: 768px) {
+  .gallery_title {
+    display: grid;
+    color: #cdcdcd;
+    font-size: 2em;
+    text-shadow: black;
+    justify-content: center;
+    padding: 2%;
+  }
 }
-.gallery .gallery img:hover {
-  /*Webkit: увеличиваем размер до 1.2x*/
-  /*Mozilla: масштабирование*/
-  transform: scale(1.1);
-  /*Opera: масштабирование*/
-  box-shadow: 0px 0px 30px gray;
-  /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
-  -webkit-box-shadow: 0px 0px 30px gray;
-  /*Webkit: тени*/
-  -moz-box-shadow: 0px 0px 30px gray;
-  /*Mozilla: тени*/
+.gallery_img {
+  transform: scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+  -moz-transform: scale(0.8); /*Mozilla: масштабирование*/
+  --o-transform: scale(0.8); /*Opera: масштабирование*/ /*Webkit: длительность анимации*/
+  transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+  -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+  opacity: 0.7; /*Начальная прозрачность изображений*/
+  margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+.gallery_img:hover { /*Webkit: увеличиваем размер до 1.2x*/ /*Mozilla: масштабирование*/
+  transform: scale(1.1); /*Opera: масштабирование*/
+  box-shadow: 0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+  -webkit-box-shadow: 0px 0px 30px gray; /*Webkit: тени*/
+  -moz-box-shadow: 0px 0px 30px gray; /*Mozilla: тени*/
   opacity: 1;
 }
 
