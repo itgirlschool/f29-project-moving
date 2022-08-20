@@ -1071,7 +1071,7 @@ body {
   grid-row: 1fr;
   color: #cdcdcd;
   font-size: 32px;
-  text-shadow: black;
+  text-shadow: #000;
   justify-content: center;
   padding: 2%;
 }
