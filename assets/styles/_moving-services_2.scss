@@ -1,0 +1,85 @@
+.container {
+
+    // .container__services
+
+    &__services {
+
+        background-color: $color-main;
+        margin-top: 1em;
+        margin-bottom: 4em;
+        position: relative;
+
+        &__title {
+            color: $text-color;
+            font-size: $font-size-home;
+            text-align:center
+             } 
+            }
+
+         &__services__img {
+            width: 100%;
+            margin-bottom: 0;
+            margin-top: 0;
+            overflow: hidden;
+            height: auto;   }
+        
+       
+}
+
+.aboutservices {
+
+    // .aboutservices
+
+        display: grid;
+        background-color: $color-main;
+        justify-self: center;        
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 3%;
+        color: $menu-color;
+        font-family:$font-family-sans-serif; 
+
+        @media screen and (max-width: $grid-breakpoint-xl) {
+            display: grid;
+            
+            margin-left: 2em;
+            margin-right: 2em;
+            }
+
+        @media screen and (max-width: $grid-breakpoint-lg) {
+            margin-left: 2em;
+            margin-right: 2em;
+            
+        }
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+          
+            margin-left: 2em;
+            margin-right: 2em;    
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            
+            margin-left: 2em;
+            margin-right: 2em;
+            }
+
+             // .aboutservices__subtitle
+       &__subtitle{
+        font-size: $font-size-text-about;
+        color: $text-color;
+        font-weight: bolder;
+       }  
+        // .aboutservices__item
+
+       &__item{
+        text-align: center;
+        font-size: $font-size-home;
+        color: $menu-color;
+
+       }
+}
+
+
+    
