@@ -26,19 +26,18 @@ $font-size-logo: 32px;
 .info {
     /*Информация адрес и часы работы*/
     display: grid;
-    grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(6, 1fr) 2fr;
+    grid-template-rows: repeat(5, 1fr) 2fr repeat(6, 1fr) 2fr;
     box-sizing: border-box;
     font-size: $font-size-text-about;
 
     @media screen and (max-width: $grid-breakpoint-sm) {
         display: grid;
-        grid-template-rows: 2fr repeat(5, 0.5fr) 1fr repeat(6, 0.5fr) 1fr;
+        grid-template-rows: repeat(5, 0.5fr) 1fr repeat(6, 0.5fr) 1fr;
         font-size: $font-size-home
     }
 
     &_header {
         grid-row: 1/2;
-        font-size: $font-size-logo
         
     }
 

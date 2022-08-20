@@ -39,6 +39,8 @@ th {
 
 h3 {
   font-size: 32px;
+  color: white;
+  text-align: center;
 }
 
 h4 {
@@ -60,20 +62,19 @@ h4 {
 .info {
   /*Информация адрес и часы работы*/
   display: grid;
-  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(6, 1fr) 2fr;
+  grid-template-rows: repeat(5, 1fr) 2fr repeat(6, 1fr) 2fr;
   box-sizing: border-box;
   font-size: 26px;
 }
 @media screen and (max-width: 576px) {
   .info {
     display: grid;
-    grid-template-rows: 2fr repeat(5, 0.5fr) 1fr repeat(6, 0.5fr) 1fr;
+    grid-template-rows: repeat(5, 0.5fr) 1fr repeat(6, 0.5fr) 1fr;
     font-size: 20px;
   }
 }
 .info_header {
   grid-row: 1/2;
-  font-size: 32px;
 }
 .info_address {
   grid-row: 2/3;

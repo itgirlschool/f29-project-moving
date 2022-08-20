@@ -71,7 +71,9 @@ th {
 }
 
 h3 {
-    font-size: $font-size-logo
+    font-size: $font-size-logo;
+    color: $menu-color;
+    text-align: center;
 }
 
 h4 {
