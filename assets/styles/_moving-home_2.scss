@@ -31,6 +31,15 @@ body {
             background-color: $color-main;
             margin: 0;
         }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: grid;
+            position: relative;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            background-color: $color-main;
+            margin: 0;
+        }
     }
 
     // .container__menu
@@ -47,17 +56,18 @@ body {
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             position: relative;
-            grid-template-rows: 8rem 8rem 8rem;
+            grid-template-rows: 8rem 14rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
             font-family: $font-family-sans-serif;
             color: $menu-color;
             margin: 0;
         }
+
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
             position: relative;
-            grid-template-rows: 8rem 4rem 8rem;
+            grid-template-rows: 8rem 14rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
             font-family: $font-family-sans-serif;
@@ -77,7 +87,7 @@ body {
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 8rem 4rem 8rem;
+            grid-template-rows: 8rem 6rem 8rem;
             background-color: $color-main;
             margin-top: 1rem;
         }
@@ -85,7 +95,7 @@ body {
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 8rem 4rem 8rem;
+            grid-template-rows: 8rem 6rem 8rem;
             background-color: $color-main;
             margin-top: 1rem;
         }
@@ -125,6 +135,11 @@ body {
             grid-template-columns: 1fr;
         }
     }
+
+    //.container__name
+    &__name {
+        display: grid;
+    }
 }
 
 .logo {
@@ -146,15 +161,62 @@ body {
         }
     }
 
+    //.logo__name_mobile
+    &__name_mobile {
+        display: none;
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            text-align: center;
+            align-items: center;
+            font-family: $font-family-sans-serif;
+            font-size: $font-size-logo;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            text-align: center;
+            align-items: center;
+            font-family: $font-family-sans-serif;
+            font-size: $font-size-logo;
+            font-weight: 500;
+        }
+    }
+
+    //.logo__name
     &__name {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         text-align: center;
-        align-items:center;
+        align-items: center;
         font-family: $font-family-sans-serif;
         font-size: $font-size-logo;
         font-weight: 500;
+
+        @media screen and (max-width: $grid-breakpoint-xxl) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            text-align: center;
+            align-items: center;
+            font-family: $font-family-sans-serif;
+            font-size: $font-size-xxl;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: none;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: none;
+        }
     }
 
     &__tel {
@@ -169,8 +231,9 @@ body {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
-            justify-items: center;
+            justify-items: end;
             font-size: $font-size-home;
+            margin-top: 1rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -179,8 +242,10 @@ body {
             grid-template-rows: 1fr 1fr;
             justify-items: right;
             font-size: $font-size-home;
-            padding-right: 0;
+            padding-right: 30px;
             font-size: $font-size-home-mobile;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
         }
     }
 }
@@ -192,19 +257,83 @@ body {
 .logo__name::before {
     content: "";
     position: relative;
-    width: 40%;
+    width: 50%;
     height: 2px;
-    background-color: white;    
+    background-color: white;
     justify-self: center;
+
+    @media screen and (max-width: $grid-breakpoint-xl) {
+        content: "";
+        position: relative;
+        width: 60%;
+        height: 2px;
+        background-color: white;
+        justify-self: center;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
+        content: "";
+        position: relative;
+        width: 65%;
+        height: 2px;
+        background-color: white;
+        justify-self: center;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        content: "";
+        position: relative;
+        width: 60%;
+        height: 2px;
+        background-color: white;
+        justify-self: center;
+    }
 }
 
 .logo__name::after {
     content: "";
     position: relative;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    justify-self: center;
+
+    @media screen and (max-width: $grid-breakpoint-xl) {
+        content: "";
+        position: relative;
+        width: 60%;
+        height: 2px;
+        background-color: white;
+        justify-self: center;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-lg) {
+        content: "";
+        position: relative;
+        width: 65%;
+        height: 2px;
+        background-color: white;
+        justify-self: center;
+    }
+
+}
+
+.logo__name_mobile::before {
+    content: "";
+    position: relative;
     width: 40%;
     height: 2px;
-    background-color: white;    
-    justify-self: center;    
+    background-color: white;
+    justify-self: center;
+}
+
+.logo__name_mobile::after {
+    content: "";
+    position: relative;
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    justify-self: center;
 }
 
 .tel {
@@ -212,7 +341,7 @@ body {
 }
 
 .img_responsive {
-    width: 55%;
+    width: 50%;
 
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 25%;
@@ -242,12 +371,12 @@ body {
 
     // .nav__item
     &__item {
-        font-size: $font-size-footer;
+        font-size: $font-size-home;
         color: $menu-color;
         text-decoration: none;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            font-size: $font-size-footer;
+            font-size: $font-size-home;
         }
 
         @media screen and (max-width: $grid-breakpoint-xxl) {
@@ -272,14 +401,13 @@ body {
     // .about__text
     &__text {
         display: grid;
-        margin-left: 2rem;
-        margin-right: 2rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
         color: $text-color;
         text-align: center;
         align-items: center;
         line-height: 30px;
+        padding: 0 1rem;
         font-size: $font-size-home;
 
         @media screen and (max-width: $grid-breakpoint-md) {
@@ -288,11 +416,9 @@ body {
             text-align: center;
             align-items: center;
             line-height: 30px;
-            margin-left: 2rem;
-            margin-right: 2rem;
             font-size: $font-size-home-mobile;
             margin-bottom: 0;
-            margin-top: 0;
+            margin-top: 2rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -305,7 +431,7 @@ body {
             margin-right: 0;
             font-size: $font-size-footer;
             margin-bottom: 0;
-            margin-top: 0;
+            margin-top: 2rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-xxl) {
@@ -314,8 +440,6 @@ body {
             text-align: center;
             align-items: center;
             line-height: 34px;
-            margin-left: 2rem;
-            margin-right: 2rem;
             font-size: $font-size-text-about;
             margin-bottom: 0;
         }
@@ -339,6 +463,7 @@ body {
 
 // new version start
 .about {
+
     // .about__details
     &__details {
         display: grid;
@@ -350,7 +475,7 @@ body {
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 6rem 1fr 1fr;    
+            grid-template-rows: 6rem 1fr 1fr;
             margin-left: 0;
             margin-right: 0;
             margin-top: 1rem;
@@ -359,7 +484,7 @@ body {
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 6rem 1fr 1fr;    
+            grid-template-rows: 6rem 1fr 1fr;
             margin-left: 0;
             margin-right: 0;
             margin-top: 1rem;
@@ -382,17 +507,18 @@ body {
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
             margin-bottom: 2rem;
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: 2rem;
+            margin-right: 2rem;
         }
+
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
             margin-bottom: 2rem;
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: 2rem;
+            margin-right: 2rem;
         }
 
     }
@@ -410,8 +536,8 @@ body {
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
             margin-bottom: 2rem;
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: 2rem;
+            margin-right: 2rem;
             }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -420,11 +546,13 @@ body {
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
             margin-bottom: 2rem;
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: 2rem;
+            margin-right: 2rem;
             }
 
         }
+
+    }
 
     &__block_item:first-child {
         margin-left: 0;
@@ -437,6 +565,12 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-xs) {
             margin-right: 0;
             margin-left: 0;
             margin-bottom: 1rem;
@@ -458,6 +592,12 @@ body {
             margin-right: 0;
             margin-top: 1rem;
         }
+
+        @media screen and (max-width: $grid-breakpoint-xs) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1rem;
+        }
     }
 
     //.about__block_item
@@ -467,9 +607,26 @@ body {
         grid-template-rows: 3rem 3rem 1fr;
         background-color: $menu-color;
         border-radius: 10%;
-        padding: 2.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
         justify-items: center;
         text-align: center;
+        font-size: $font-size-home;
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            font-size: $font-size-home;
+            border-radius: 0;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-xxl) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
     }
 
     //.about__heading
@@ -479,17 +636,19 @@ body {
         font-size: $font-size-logo;
 
         @media screen and (max-width: $grid-breakpoint-md) {
+            font-size: $font-size-text-about;
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            font-size: $font-size-home;
+            font-size: $font-size-text-about;
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
     }
 }
+
 // new version end
 
 
@@ -501,6 +660,26 @@ body {
     color: $menu-color;
     font-size: $font-size-footer;
     margin-top: 2rem;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        display: grid;
+        position: relative;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        color: $menu-color;
+        font-size: $font-size-footer;
+        margin-top: 2rem;    
+    }
+
+    @media screen and (max-width: $grid-breakpoint-xs) {
+        display: grid;
+        position: relative;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        color: $menu-color;
+        font-size: $font-size-footer;
+        margin-top: 2rem;    
+    }
 
     // .footer__find
     &__find {
@@ -561,12 +740,12 @@ body {
 
         @media screen and (max-width: $grid-breakpoint-md) {
             margin-left: 0;
-            margin-right: 0;    
+            margin-right: 0;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             padding-left: 1rem;
-            padding-right: 1rem;    
+            padding-right: 1rem;
         }
     }
 }
@@ -597,10 +776,11 @@ body {
 
 #menuToggle {
     display: block;
-    position: relative;
-    top: 8rem;
+    position: absolute;
+    top: 19rem;
     left: 30px;
     z-index: 1;
+    max-width: 90%;
     user-select: none;
 }
 
@@ -686,4 +866,5 @@ body {
 #menuToggle input:checked~ul {
     transform: none;
 }
+
 //// MENU BURGER end ////

@@ -27,6 +27,7 @@ $font-size-home: 20px;
 $font-size-home-mobile: 22px;
 $font-size-footer: 16px;
 $font-size-logo: 32px;
+$font-size-xxl: 36px;
 $font-size-text-about: 26px;
 
 /* А тут какие-то классы и стили для тегов, тоже общие для всего проекта */
@@ -56,4 +57,14 @@ section,
 footer {
     max-width: $container-max-width;
     margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 5px;
 }

@@ -1,0 +1,75 @@
+.prices {
+    background: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em;
+    font-size: 18px;
+
+
+    // .prices__local
+
+    &__local {
+        max-width: 60%;
+        min-width: 300px;
+        margin: 0 auto;
+
+
+        // .prices__local_img
+
+        &_img {
+            width: 60px;
+            height: 60px;
+        }
+
+        // .prices__local_text
+
+
+
+        // .prices__local_money
+
+        &_money {
+
+            border: 1px solid black;
+            width: 50%;
+            max-width: $grid-breakpoint-md;
+            min-width: 200px;
+            margin: 2em auto;
+        }
+
+
+
+        // .prices__local_extr
+
+    }
+
+    // .prices__long
+
+    &__long {
+        max-width: 60%;
+        min-width: 300px;
+        margin: 0 auto;
+
+
+        // .prices__long_img
+
+        &_img {
+            width: 80px;
+            height: 60px;
+        }
+
+        // .prices__long_text
+
+
+        // .prices__long_money
+
+        &_money {
+
+            border: 1px solid black;
+            width: 100%;
+            margin: 2em auto;
+
+        }
+
+
+    }
+}
