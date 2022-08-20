@@ -550,105 +550,105 @@ body {
             margin-right: 2rem;
         }
 
-    
+    }
 
 
-}
 
-&__block_item:first-child {
-    margin-left: 0;
-    margin-right: 1rem;
 
-    @media screen and (max-width: $grid-breakpoint-md) {
-        margin-right: 0;
+    &__block_item:first-child {
         margin-left: 0;
-        margin-bottom: 1rem;
+        margin-right: 1rem;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-xs) {
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
     }
 
-    @media screen and (max-width: $grid-breakpoint-sm) {
+    &__block_item:last-child {
+        margin-left: 1rem;
         margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 1rem;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-xs) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1rem;
+        }
     }
 
-    @media screen and (max-width: $grid-breakpoint-xs) {
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 1rem;
-    }
-}
-
-&__block_item:last-child {
-    margin-left: 1rem;
-    margin-right: 0;
-
-    @media screen and (max-width: $grid-breakpoint-md) {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 1rem;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 1rem;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-xs) {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 1rem;
-    }
-}
-
-//.about__block_item
-&__block_item {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3rem 3rem 1fr;
-    background-color: $menu-color;
-    border-radius: 10%;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    justify-items: center;
-    text-align: center;
-    font-size: $font-size-home;
-
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        font-size: $font-size-home;
-        border-radius: 0;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-xxl) {
-        padding-right: 2rem;
-        padding-left: 2rem;
+    //.about__block_item
+    &__block_item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 3rem 1fr;
+        background-color: $menu-color;
+        border-radius: 10%;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+        justify-items: center;
+        text-align: center;
+        font-size: $font-size-home;
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            font-size: $font-size-home;
+            border-radius: 0;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-xxl) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
     }
 
+    //.about__heading
+    &__heading {
+        text-align: center;
+        color: $menu-color;
+        font-size: $font-size-logo;
+
+        @media screen and (max-width: $grid-breakpoint-md) {
+            font-size: $font-size-text-about;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            font-size: $font-size-text-about;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
 }
-
-//.about__heading
-&__heading {
-    text-align: center;
-    color: $menu-color;
-    font-size: $font-size-logo;
-
-    @media screen and (max-width: $grid-breakpoint-md) {
-        font-size: $font-size-text-about;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        font-size: $font-size-text-about;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
-
 
 // new version end
 
