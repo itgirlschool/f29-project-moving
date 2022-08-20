@@ -22,6 +22,8 @@ $text-color: #cdcdcd;
 $menu-color: white;
 $menu-burger-background: #ededed;
 $menu-burger-active-item: tomato;
+$color-shadow:gray;
+
 
 $font-size-home: 20px;
 $font-size-home-mobile: 22px;
@@ -57,4 +59,25 @@ section,
 footer {
     max-width: $container-max-width;
     margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h3 {
+    font-size: $font-size-logo;
+    color: $menu-color;
+    text-align: center;
+}
+
+h4 {
+    font-size: $font-size-text-about;
 }
