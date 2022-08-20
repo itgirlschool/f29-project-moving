@@ -1201,45 +1201,51 @@ body {
 }
 
 /*Здесь надо писать стили для moving-gallery*/
-.gallery { /*Стили для контейнера*/
+.gallery { /*Стили для контейнера*/ }
+.gallery .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   box-sizing: border-box;
 }
-.gallery_title { /*Стили для заголовка стр*/
+.gallery .gallery_title {
   display: grid;
   grid-row: 1fr;
-  color: #cdcdcd;
+  color: aliceblue;
   font-size: 3em;
   text-shadow: black;
   justify-content: center;
   padding: 2%;
 }
-@media screen and (max-width: 768px) {
-  .gallery_title {
-    display: grid;
-    color: #cdcdcd;
-    font-size: 2em;
-    text-shadow: black;
-    justify-content: center;
-    padding: 2%;
-  }
+.gallery .gallery img {
+  display: grid;
+  transform: scale(0.8);
+  /*Webkit: уменьшаем размер до 0.8*/
+  -moz-transform: scale(0.8);
+  /*Mozilla: масштабирование*/
+  --o-transform: scale(0.8);
+  /*Opera: масштабирование*/
+  /*Webkit: длительность анимации*/
+  transition-duration: 0.5s;
+  /*Mozilla: длительность анимации*/
+  -o-transition-duration: 0.5s;
+  /*Opera: длительность анимации*/
+  opacity: 0.7;
+  /*Начальная прозрачность изображений*/
+  margin: 0 10px 5px 0;
+  /*Интервалы между изображениями*/
 }
-.gallery_img {
-  transform: scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
-  -moz-transform: scale(0.8); /*Mozilla: масштабирование*/
-  --o-transform: scale(0.8); /*Opera: масштабирование*/ /*Webkit: длительность анимации*/
-  transition-duration: 0.5s; /*Mozilla: длительность анимации*/
-  -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
-  opacity: 0.7; /*Начальная прозрачность изображений*/
-  margin: 0 10px 5px 0; /*Интервалы между изображениями*/
-}
-.gallery_img:hover { /*Webkit: увеличиваем размер до 1.2x*/ /*Mozilla: масштабирование*/
-  transform: scale(1.1); /*Opera: масштабирование*/
-  box-shadow: 0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
-  -webkit-box-shadow: 0px 0px 30px gray; /*Webkit: тени*/
-  -moz-box-shadow: 0px 0px 30px gray; /*Mozilla: тени*/
+.gallery .gallery img:hover {
+  /*Webkit: увеличиваем размер до 1.2x*/
+  /*Mozilla: масштабирование*/
+  transform: scale(1.1);
+  /*Opera: масштабирование*/
+  box-shadow: 0px 0px 30px gray;
+  /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+  -webkit-box-shadow: 0px 0px 30px gray;
+  /*Webkit: тени*/
+  -moz-box-shadow: 0px 0px 30px gray;
+  /*Mozilla: тени*/
   opacity: 1;
 }
 
@@ -1279,4 +1285,70 @@ body {
   border: 1px solid black;
   width: 100%;
   margin: 2em auto;
+}
+
+.container__services {
+  background-color: #000;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  position: relative;
+}
+.container__services__title {
+  color: #cdcdcd;
+  font-size: 20px;
+  text-align: center;
+}
+.container__services__img {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  height: auto;
+}
+
+.aboutservices {
+  display: grid;
+  background-color: #000;
+  justify-self: center;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .aboutservices {
+    display: grid;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .aboutservices {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutservices {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .aboutservices {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+.aboutservices__subtitle {
+  font-size: 26px;
+  color: white;
+  font-weight: bolder;
+}
+.aboutservices__item {
+  text-align: center;
+  font-size: 20px;
+  color: white;
 }/*# sourceMappingURL=main-styles.css.map */
