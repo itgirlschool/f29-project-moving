@@ -37,6 +37,14 @@ th {
   padding: 5px;
 }
 
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
 /* здесь надо писать стили для файла moving-form.html */
 .movingform {
   /*Общий контейнер странички*/
@@ -1244,14 +1252,12 @@ body {
 }
 
 .prices {
-  background: white;
+  background-color: black;
   text-align: center;
   margin: 0 auto;
-  padding: 2em;
   font-size: 18px;
 }
 .prices__local {
-  max-width: 60%;
   min-width: 300px;
   margin: 0 auto;
 }
@@ -1267,7 +1273,6 @@ body {
   margin: 2em auto;
 }
 .prices__long {
-  max-width: 60%;
   min-width: 300px;
   margin: 0 auto;
 }
@@ -1275,5 +1280,23 @@ body {
   width: 80px;
   height: 60px;
 }
+.prices__long_money {
+  border: 1px solid black;
+  width: 70%;
+  max-width: 768px;
+  min-width: 200px;
+  margin: 2em auto;
+}
 
-/*# sourceMappingURL=main-styles.css.map */
+.container__local,
+.container__long {
+  max-width: 80%;
+  background-color: white;
+  border-radius: 10%;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.prices__heading {
+  color: white;
+}/*# sourceMappingURL=main-styles.css.map */
