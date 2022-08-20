@@ -10,13 +10,13 @@
     display: grid;
     grid-row: 1fr;
     color:$text-color;
-    font-size: 32px;
-    text-shadow: black;
+    font-size: $font-size-logo;
+    text-shadow: $color-main;
     justify-content: center;
     padding: 2%;
 
-    @media screen and (max-width: 576px) {
-      font-size: 20px;
+    @media screen and (max-width:$grid-breakpoint-sm ){
+      font-size: $font-size-home;
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
@@ -48,11 +48,11 @@
       /*Mozilla: масштабирование*/
       transform: scale(1.1);
       /*Opera: масштабирование*/
-      box-shadow: 0px 0px 30px gray;
+      box-shadow: 0px 0px 30px $color-shadow;
       /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
-      -webkit-box-shadow: 0px 0px 30px gray;
+      -webkit-box-shadow: 0px 0px 30px $color-shadow;
       /*Webkit: тени*/
-      -moz-box-shadow: 0px 0px 30px gray;
+      -moz-box-shadow: 0px 0px 30px $color-shadow;
       /*Mozilla: тени*/
       opacity: 1;
     }
