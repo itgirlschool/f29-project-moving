@@ -61,15 +61,12 @@ h4 {
 
 .info {
   /*Информация адрес и часы работы*/
-  display: grid;
-  grid-template-rows: repeat(5, 1fr) 2fr repeat(6, 1fr) 2fr;
   box-sizing: border-box;
   font-size: 26px;
+  line-height: 3rem;
 }
 @media screen and (max-width: 576px) {
   .info {
-    display: grid;
-    grid-template-rows: repeat(5, 0.5fr) 1fr repeat(6, 0.5fr) 1fr;
     font-size: 20px;
   }
 }
@@ -152,11 +149,12 @@ h4 {
   .contactform {
     width: 80%;
     margin-left: 10%;
+    height: 50%;
   }
 }
 @media screen and (max-width: 576px) {
   .contactform {
-    width: 70%;
+    width: 80%;
     font-size: 20px;
     gap: 0.6em;
   }
