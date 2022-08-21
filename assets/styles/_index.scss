@@ -221,33 +221,47 @@ body {
 
     &__tel {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 1fr;
         justify-items: end;
-        font-size: $font-size-home;
+        font-size: 20px;
         padding-right: 3em;
+        align-items: center;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
             justify-items: end;
             font-size: $font-size-home;
             margin-top: 1rem;
+
+
+
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
             justify-items: right;
             font-size: $font-size-home;
-            padding-right: 30px;
+            padding-right: 15px;
             font-size: $font-size-home-mobile;
             margin-top: 1rem;
-            margin-right: 0.5rem;
+
         }
     }
+}
+
+.numbers,
+a {
+    color: white;
+}
+
+.numbers,
+a :hover {
+    color: $blue-hover
 }
 
 #first_tel {
@@ -318,6 +332,8 @@ body {
 
 }
 
+
+
 .logo__name_mobile::before {
     content: "";
     position: relative;
@@ -337,7 +353,8 @@ body {
 }
 
 .tel {
-    width: 25px;
+    width: 50px;
+
 }
 
 .img_responsive {
@@ -385,9 +402,8 @@ body {
     }
 
     &__item:hover {
-        color: $text-color;
-        background-color: $grey-background;
-        border-radius: 10%;
+        color: $blue-hover;
+
     }
 }
 
@@ -402,7 +418,6 @@ body {
     &__text {
         display: grid;
         margin-top: 1rem;
-        margin-bottom: 1rem;
         color: $text-color;
         text-align: center;
         align-items: center;
@@ -607,7 +622,7 @@ body {
         grid-template-columns: 1fr;
         grid-template-rows: 3rem 3rem 1fr;
         background-color: $menu-color;
-        border-radius: 10%;
+        border-radius: 50px;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         padding-top: 2rem;
@@ -725,6 +740,11 @@ body {
 
     &__social a:last-child {
         margin-left: 1em;
+    }
+
+    &__social a:hover {
+        background-color: $blue-hover;
+        border-radius: 5px;
     }
 
     // .footer__copyright
