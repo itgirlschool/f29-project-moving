@@ -77,9 +77,13 @@
 .container__long {
     max-width: 80%;
     background-color: white;
-    border-radius: 10%;
+    border-radius: 20px;
     margin: 2em auto;
     padding: 1em;
+
+    @media screen and (max-width: $grid-breakpoint-md) {
+        border-radius: 0;
+    }
 }
 
 .prices__heading {
