@@ -53,8 +53,8 @@ h4 {
 }
 
 /* здесь надо писать стили для файла moving-form.html */
-.movingform {
-  /*Общий контейнер странички*/
+.info {
+  /*Информация адрес и часы работы*/
   box-sizing: border-box;
   width: 100wv;
   height: 100hv;
@@ -62,78 +62,11 @@ h4 {
   color: white;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.info {
-  /*Информация адрес и часы работы*/
-  box-sizing: border-box;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 3rem;
 }
-@media screen and (max-width: 576px) {
-  .info {
-    font-size: 20px;
-  }
-}
-.info_header {
-  grid-row: 1/2;
-}
-.info_address {
-  grid-row: 2/3;
+.info_address, .info_time {
   font-size: 26px;
-}
-.info_address1 {
-  grid-row: 3/4;
-  font-size: 20px;
-}
-.info_email1 {
-  grid-row: 4/5;
-  font-size: 20px;
-}
-.info_address2 {
-  grid-row: 5/6;
-  font-size: 20px;
-}
-.info_email2 {
-  grid-row: 6/7;
-  font-size: 20px;
-}
-.info_time {
-  grid-row: 7/8;
-  font-size: 26px;
-  align-self: end;
-}
-.info_mon {
-  grid-row: 8/9;
-  font-size: 20px;
-}
-.info_tue {
-  grid-row: 9/10;
-  font-size: 20px;
-}
-.info_wed {
-  grid-row: 10/11;
-  font-size: 20px;
-}
-.info_thu {
-  grid-row: 11/12;
-  font-size: 20px;
-}
-.info_fri {
-  grid-row: 12/13;
-  font-size: 20px;
-}
-.info_sat {
-  grid-row: 13/14;
-  font-size: 20px;
-}
-.info_sun {
-  grid-row: 14/15;
-  font-size: 20px;
-}
-.info_text {
-  grid-row: 15/16;
-  font-size: 20px;
 }
 
 .contactform {
