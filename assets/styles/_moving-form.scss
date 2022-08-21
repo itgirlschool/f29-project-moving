@@ -4,7 +4,6 @@
 $color: white;
 $color1: rgb(127, 124, 124);
 $container-width: 100wv;
-$container-height: 100hv;
 $main-color: #000;
 $font-size-home: 20px;
 $font-size-text-about: 26px;
@@ -16,7 +15,6 @@ $font-size-logo: 32px;
     /*Информация адрес и часы работы*/
     box-sizing: border-box;
     width: $container-width;
-    height: $container-height;
     background: $main-color ;
     color: $color;
     text-align: center;
