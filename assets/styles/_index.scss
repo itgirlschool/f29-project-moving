@@ -56,23 +56,25 @@ body {
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             position: relative;
-            grid-template-rows: 8rem 14rem;
+            grid-template-rows: 8rem 8rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
             font-family: $font-family-sans-serif;
             color: $menu-color;
             margin: 0;
+            border: 1px solid red;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
             position: relative;
-            grid-template-rows: 8rem 14rem;
+            grid-template-rows: 8rem 8rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
             font-family: $font-family-sans-serif;
             color: $menu-color;
             margin: 0;
+            border: 1px solid blue;
         }
 
     }
@@ -84,6 +86,23 @@ body {
         grid-template-columns: 25% 1fr 25%;
         background-color: $color-main;
 
+        @media screen and (max-width: $grid-breakpoint-md) {
+            display: grid;
+            grid-template-rows: 8rem 8rem;
+            grid-template-columns: 10rem 1fr;
+            background-color: $color-main;
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
+            display: grid;
+            grid-template-rows: 8rem 8rem;
+            grid-template-columns: 8rem 1fr;
+            background-color: $color-main;
+            margin-top: 1rem;
+        }
+
+        /*
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             grid-template-columns: 1fr;
@@ -99,6 +118,7 @@ body {
             background-color: $color-main;
             margin-top: 1rem;
         }
+        */
 
     }
 
@@ -156,8 +176,10 @@ body {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            justify-items: center;
+            justify-items: end;
             align-items: center;
+            padding-left: 1rem;
+            border: 1px solid brown;
         }
     }
 
@@ -168,23 +190,25 @@ body {
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: 1fr;
             text-align: center;
             align-items: center;
             font-family: $font-family-sans-serif;
             font-size: $font-size-logo;
             font-weight: 500;
+            border: 1px solid green;
         }
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: 1fr;
             text-align: center;
             align-items: center;
             font-family: $font-family-sans-serif;
-            font-size: $font-size-logo;
+            font-size: $font-size-xxl;
             font-weight: 500;
+            border: 1px solid yellow;
         }
     }
 
@@ -198,6 +222,7 @@ body {
         font-family: $font-family-sans-serif;
         font-size: $font-size-logo;
         font-weight: 500;
+        margin-top: 1rem;
 
         @media screen and (max-width: $grid-breakpoint-xxl) {
             display: grid;
@@ -225,7 +250,7 @@ body {
         grid-template-rows: 1fr 1fr;
         justify-items: end;
         font-size: $font-size-home;
-        padding-right: 3em;
+        padding-right: 2rem;
 
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
@@ -234,6 +259,8 @@ body {
             justify-items: end;
             font-size: $font-size-home;
             margin-top: 1rem;
+            padding: 0;
+            border: 1px solid purple;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -242,10 +269,10 @@ body {
             grid-template-rows: 1fr 1fr;
             justify-items: right;
             font-size: $font-size-home;
-            padding-right: 30px;
             font-size: $font-size-home-mobile;
-            margin-top: 1rem;
-            margin-right: 0.5rem;
+            margin-top: 1.5rem;
+            padding: 0;
+            border: 1px solid whitesmoke;
         }
     }
 }
@@ -315,7 +342,6 @@ body {
         background-color: white;
         justify-self: center;
     }
-
 }
 
 .logo__name_mobile::before {
@@ -334,6 +360,7 @@ body {
     height: 2px;
     background-color: white;
     justify-self: center;
+    margin-top: 10px;
 }
 
 .tel {
@@ -341,8 +368,17 @@ body {
 }
 
 .img_responsive {
-    width: 50%;
+    width: 40%;
 
+    @media screen and (max-width: $grid-breakpoint-md) {
+        width: 0%;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+        width: 90%;
+    }
+
+    /*
     @media screen and (max-width: $grid-breakpoint-md) {
         width: 25%;
     }
@@ -350,6 +386,7 @@ body {
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 40%;
     }
+    */
 }
 
 .nav {
@@ -551,9 +588,6 @@ body {
         }
 
     }
-
-
-
 
     &__block_item:first-child {
         margin-left: 0;
@@ -783,7 +817,7 @@ body {
 #menuToggle {
     display: block;
     position: absolute;
-    top: 19rem;
+    top: 17rem;
     left: 30px;
     z-index: 1;
     max-width: 90%;
