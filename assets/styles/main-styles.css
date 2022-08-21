@@ -15,6 +15,11 @@ body {
   color: #000;
 }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -354,6 +359,7 @@ body {
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
+  max-height: 130px;
 }
 @media screen and (max-width: 768px) {
   .logo__img {
@@ -448,7 +454,6 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: right;
-    font-size: 20px;
     padding-right: 15px;
     font-size: 22px;
     margin-top: 1rem;
@@ -1019,16 +1024,16 @@ a :hover {
   background: #cdcdcd;
   border-radius: 3px;
   z-index: 1;
-  transform-origin: 4px 0px;
+  transform-origin: 4px 0;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
-  transform-origin: 0% 0%;
+  transform-origin: 0 0;
 }
 
 #menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
+  transform-origin: 0 100%;
 }
 
 #menuToggle input:checked ~ span {
@@ -1055,7 +1060,7 @@ a :hover {
   padding-top: 100px;
   background: #ededed;
   list-style-type: none;
-  transform-origin: 0% 0%;
+  transform-origin: 0 0;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
