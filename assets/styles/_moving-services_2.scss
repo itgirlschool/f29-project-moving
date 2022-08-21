@@ -30,9 +30,8 @@
 
     // .aboutservices
 
-        display: grid;
-        background-color: $color-main;
-        justify-self: center;        
+       
+        background-color: $color-main;               
         text-align: center;
         margin-left: 20%;
         margin-right: 20%;
@@ -40,9 +39,7 @@
         color: $menu-color;
         font-family:$font-family-sans-serif; 
 
-        @media screen and (max-width: $grid-breakpoint-xl) {
-            display: grid;
-            
+        @media screen and (max-width: $grid-breakpoint-xl) {            
             margin-left: 2em;
             margin-right: 2em;
             }

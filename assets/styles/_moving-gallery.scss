@@ -6,24 +6,8 @@
   grid-template-rows: repeat(4, 1fr);
   box-sizing: border-box;
 
-  &_title {
-    display: grid;
-    grid-row: 1fr;
-    color:$text-color;
-    font-size: $font-size-logo;
-    text-shadow: $color-main;
-    justify-content: center;
-    padding: 2%;
-
-    @media screen and (max-width:$grid-breakpoint-sm ){
-      font-size: $font-size-home;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-  }
-
   img {
-    display: grid;
+   
     transform: scale(0.8);
     /*Webkit: уменьшаем размер до 0.8*/
     -moz-transform: scale(0.8);

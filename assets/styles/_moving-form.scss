@@ -4,113 +4,27 @@
 $color: white;
 $color1: rgb(127, 124, 124);
 $container-width: 100wv;
-$container-height: 100hv;
 $main-color: #000;
 $font-size-home: 20px;
 $font-size-text-about: 26px;
 $font-size-logo: 32px;
 
 
-.movingform {
-    /*Общий контейнер странички*/
+.info{
+
+    /*Информация адрес и часы работы*/
     box-sizing: border-box;
     width: $container-width;
-    height: $container-height;
     background: $main-color ;
     color: $color;
     text-align: center;
     font-family: $font-family-sans-serif ;
-}
-
-
-.info {
-    /*Информация адрес и часы работы*/
-
-    box-sizing: border-box;
-    font-size: $font-size-text-about;
+    font-size: $font-size-home;
     line-height: 3rem;
 
-    @media screen and (max-width: $grid-breakpoint-sm) {
+    &_address, &_time{
+        font-size: $font-size-text-about;   
 
-        font-size: $font-size-home
-    }
-
-    &_header {
-        grid-row: 1/2;
-
-    }
-
-    &_address {
-        grid-row: 2/3;
-        font-size: $font-size-text-about
-    }
-
-    &_address1 {
-        grid-row: 3/4;
-        font-size: $font-size-home
-    }
-
-    &_email1 {
-
-        grid-row: 4/5;
-        font-size: $font-size-home
-    }
-
-    &_address2 {
-        grid-row: 5/6;
-        font-size: $font-size-home
-    }
-
-    &_email2 {
-        grid-row: 6/7;
-        font-size: $font-size-home
-    }
-
-    &_time {
-        grid-row: 7/8;
-        font-size: $font-size-text-about;
-        align-self: end;
-
-    }
-
-    &_mon {
-        grid-row: 8/9;
-        font-size: $font-size-home
-    }
-
-    &_tue {
-        grid-row: 9/10;
-        font-size: $font-size-home
-    }
-
-    &_wed {
-        grid-row: 10/11;
-        font-size: $font-size-home
-    }
-
-    &_thu {
-        grid-row: 11/12;
-        font-size: $font-size-home
-    }
-
-    &_fri {
-        grid-row: 12/13;
-        font-size: $font-size-home
-    }
-
-    &_sat {
-        grid-row: 13/14;
-        font-size: $font-size-home
-    }
-
-    &_sun {
-        grid-row: 14/15;
-        font-size: $font-size-home
-    }
-
-    &_text {
-        grid-row: 15/16;
-        font-size: $font-size-home
     }
 }
 
