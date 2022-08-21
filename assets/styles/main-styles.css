@@ -808,7 +808,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 3rem 3rem 1fr;
   background-color: white;
-  border-radius: 10%;
+  border-radius: 50px;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   padding-top: 2rem;
@@ -944,6 +944,11 @@ body {
 
 .social_icon {
   width: 40px;
+}
+
+.social_icon:hover {
+  background-color: lightgrey;
+  border-radius: 20px;
 }
 
 .burger__menu {
