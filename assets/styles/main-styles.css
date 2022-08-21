@@ -393,22 +393,23 @@ body {
 }
 .logo__tel {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-items: end;
   font-size: 20px;
   padding-right: 2rem;
+  margin-top: 3rem;
 }
 @media screen and (max-width: 768px) {
   .logo__tel {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-items: end;
     font-size: 20px;
-    margin-top: 1rem;
-    margin-left: 18rem;
+    margin-top: 3rem;
     padding: 0;
+    margin-left: 24rem;
     align-self: center;
   }
 }
@@ -420,11 +421,15 @@ body {
     justify-items: right;
     padding-right: 15px;
     font-size: 22px;
-    margin-top: 1rem;
-    margin-left: 9rem;
+    margin-top: 2rem;
+    margin-left: 10rem;
     padding: 0;
     align-self: center;
   }
+}
+
+.logo__tel:hover {
+  color: white;
 }
 
 #first_tel {
