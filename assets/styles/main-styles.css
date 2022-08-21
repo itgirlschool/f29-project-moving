@@ -15,6 +15,11 @@ body {
   color: #000;
 }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -48,87 +53,19 @@ h4 {
 }
 
 /* здесь надо писать стили для файла moving-form.html */
-.movingform {
-  /*Общий контейнер странички*/
+.info {
+  /*Информация адрес и часы работы*/
   box-sizing: border-box;
   width: 100wv;
-  height: 100hv;
   background: #000;
   color: white;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.info {
-  /*Информация адрес и часы работы*/
-  box-sizing: border-box;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 3rem;
 }
-@media screen and (max-width: 576px) {
-  .info {
-    font-size: 20px;
-  }
-}
-.info_header {
-  grid-row: 1/2;
-}
-.info_address {
-  grid-row: 2/3;
+.info_address, .info_time {
   font-size: 26px;
-}
-.info_address1 {
-  grid-row: 3/4;
-  font-size: 20px;
-}
-.info_email1 {
-  grid-row: 4/5;
-  font-size: 20px;
-}
-.info_address2 {
-  grid-row: 5/6;
-  font-size: 20px;
-}
-.info_email2 {
-  grid-row: 6/7;
-  font-size: 20px;
-}
-.info_time {
-  grid-row: 7/8;
-  font-size: 26px;
-  align-self: end;
-}
-.info_mon {
-  grid-row: 8/9;
-  font-size: 20px;
-}
-.info_tue {
-  grid-row: 9/10;
-  font-size: 20px;
-}
-.info_wed {
-  grid-row: 10/11;
-  font-size: 20px;
-}
-.info_thu {
-  grid-row: 11/12;
-  font-size: 20px;
-}
-.info_fri {
-  grid-row: 12/13;
-  font-size: 20px;
-}
-.info_sat {
-  grid-row: 13/14;
-  font-size: 20px;
-}
-.info_sun {
-  grid-row: 14/15;
-  font-size: 20px;
-}
-.info_text {
-  grid-row: 15/16;
-  font-size: 20px;
 }
 
 .contactform {
@@ -372,6 +309,7 @@ body {
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
+  max-height: 130px;
 }
 @media screen and (max-width: 768px) {
   .logo__img {
@@ -477,9 +415,10 @@ body {
 @media screen and (max-width: 576px) {
   .logo__tel {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    font-size: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: right;
+    padding-right: 15px;
     font-size: 22px;
     margin-top: 1rem;
     margin-left: 9rem;
@@ -1054,16 +993,16 @@ body {
   background: #cdcdcd;
   border-radius: 3px;
   z-index: 1;
-  transform-origin: 4px 0px;
+  transform-origin: 4px 0;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
-  transform-origin: 0% 0%;
+  transform-origin: 0 0;
 }
 
 #menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
+  transform-origin: 0 100%;
 }
 
 #menuToggle input:checked ~ span {
@@ -1090,7 +1029,7 @@ body {
   padding-top: 100px;
   background: #ededed;
   list-style-type: none;
-  transform-origin: 0% 0%;
+  transform-origin: 0 0;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
@@ -1110,24 +1049,7 @@ body {
   grid-template-rows: repeat(4, 1fr);
   box-sizing: border-box;
 }
-.gallery_title {
-  display: grid;
-  grid-row: 1fr;
-  color: #cdcdcd;
-  font-size: 32px;
-  text-shadow: #000;
-  justify-content: center;
-  padding: 2%;
-}
-@media screen and (max-width: 576px) {
-  .gallery_title {
-    font-size: 20px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
 .gallery img {
-  display: grid;
   transform: scale(0.8);
   /*Webkit: уменьшаем размер до 0.8*/
   -moz-transform: scale(0.8);
@@ -1234,9 +1156,7 @@ body {
 }
 
 .aboutservices {
-  display: grid;
   background-color: #000;
-  justify-self: center;
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
@@ -1246,7 +1166,6 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .aboutservices {
-    display: grid;
     margin-left: 2em;
     margin-right: 2em;
   }

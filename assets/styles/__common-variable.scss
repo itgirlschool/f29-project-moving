@@ -47,6 +47,11 @@ body {
     color: $color-main;
 }
 
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 
 a {
     text-decoration: none;
