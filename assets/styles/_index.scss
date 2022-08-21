@@ -24,21 +24,12 @@ body {
         margin: 0;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            position: relative;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr;
-            background-color: $color-main;
-            margin: 0;
+            margin: 2rem 0 0 0;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            position: relative;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr;
             background-color: $color-main;
-            margin: 0;
+            margin: 2rem 0 0 0;
         }
     }
 
@@ -54,9 +45,7 @@ body {
         margin: 0;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            position: relative;
-            grid-template-rows: 8rem 14rem;
+            grid-template-rows: 8rem 8rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
             font-family: $font-family-sans-serif;
@@ -65,9 +54,7 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            position: relative;
-            grid-template-rows: 8rem 14rem;
+            grid-template-rows: 8rem 8rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
             font-family: $font-family-sans-serif;
@@ -83,23 +70,19 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 25% 1fr 25%;
         background-color: $color-main;
+        justify-content: center;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 8rem 6rem 8rem;
-            background-color: $color-main;
+            grid-template-rows: 8rem 8rem;
+            grid-template-columns: 12rem 1fr;
             margin-top: 1rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 8rem 6rem 8rem;
-            background-color: $color-main;
+            grid-template-rows: 8rem 8rem;
+            grid-template-columns: 8rem 1fr;
             margin-top: 1rem;
         }
-
     }
 
     // .container__nav
@@ -124,13 +107,11 @@ body {
         grid-template-columns: 1fr;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
         }
@@ -154,11 +135,19 @@ body {
         max-height: 130px;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-items: end;
+            align-items: center;
+            padding-left: 1rem;
+        }
+
+        @media screen and (max-width: $grid-breakpoint-sm) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             justify-items: center;
             align-items: center;
+            padding-left: 1rem;
         }
     }
 
@@ -169,7 +158,7 @@ body {
         @media screen and (max-width: $grid-breakpoint-sm) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: 1fr;
             text-align: center;
             align-items: center;
             font-family: $font-family-sans-serif;
@@ -180,11 +169,11 @@ body {
         @media screen and (max-width: $grid-breakpoint-md) {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: 1fr;
             text-align: center;
             align-items: center;
             font-family: $font-family-sans-serif;
-            font-size: $font-size-logo;
+            font-size: $font-size-xxl;
             font-weight: 500;
         }
     }
@@ -199,9 +188,9 @@ body {
         font-family: $font-family-sans-serif;
         font-size: $font-size-logo;
         font-weight: 500;
+        margin-top: 1rem;
 
         @media screen and (max-width: $grid-breakpoint-xxl) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(4, 1fr);
             text-align: center;
@@ -222,34 +211,34 @@ body {
 
     &__tel {
         display: grid;
-        grid-template-columns: 30% 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-items: end;
-        font-size: 20px;
-        padding-right: 3em;
-        align-items: center;
+        font-size: $font-size-home;
+        padding-right: 2rem;
+        margin-top: 3rem;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
             justify-items: end;
-            font-size: $font-size-home;
-            margin-top: 1rem;
-
-
-
+            font-size: $font-size-home-mobile;
+            margin-top: 3rem;
+            padding: 0;
+            margin-left: 24rem;
+            align-self: center;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
             justify-items: right;
             padding-right: 15px;
             font-size: $font-size-home-mobile;
-            margin-top: 1rem;
-
+            margin-top: 2rem;
+            margin-left: 10rem;
+            padding: 0;
+            align-self: center;
         }
     }
 }
@@ -261,7 +250,7 @@ a {
 
 .numbers,
 a :hover {
-    color: $blue-hover
+    color: $blue-hover;
 }
 
 #first_tel {
@@ -329,10 +318,7 @@ a :hover {
         background-color: white;
         justify-self: center;
     }
-
 }
-
-
 
 .logo__name_mobile::before {
     content: "";
@@ -350,22 +336,22 @@ a :hover {
     height: 2px;
     background-color: white;
     justify-self: center;
+    margin-top: 10px;
 }
 
 .tel {
-    width: 50px;
-
+    width: 25px;
 }
 
 .img_responsive {
-    width: 50%;
+    width: 40%;
 
     @media screen and (max-width: $grid-breakpoint-md) {
-        width: 25%;
+        width: 70%;
     }
 
     @media screen and (max-width: $grid-breakpoint-sm) {
-        width: 40%;
+        width: 90%;
     }
 }
 
@@ -403,7 +389,6 @@ a :hover {
 
     &__item:hover {
         color: $blue-hover;
-
     }
 }
 
@@ -418,6 +403,7 @@ a :hover {
     &__text {
         display: grid;
         margin-top: 1rem;
+        margin-bottom: 1rem;
         color: $text-color;
         text-align: center;
         align-items: center;
@@ -426,19 +412,14 @@ a :hover {
         font-size: $font-size-home;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            color: $text-color;
             text-align: center;
             align-items: center;
-            line-height: 30px;
             font-size: $font-size-home-mobile;
             margin-bottom: 0;
             margin-top: 2rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            color: $text-color;
             text-align: center;
             align-items: center;
             line-height: 26px;
@@ -450,8 +431,6 @@ a :hover {
         }
 
         @media screen and (max-width: $grid-breakpoint-xxl) {
-            display: grid;
-            color: $text-color;
             text-align: center;
             align-items: center;
             line-height: 34px;
@@ -476,7 +455,6 @@ a :hover {
     }
 }
 
-// new version start
 .about {
 
     // .about__details
@@ -488,7 +466,6 @@ a :hover {
         margin-right: 2rem;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 6rem 1fr 1fr;
             margin-left: 0;
@@ -497,7 +474,6 @@ a :hover {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 6rem 1fr 1fr;
             margin-left: 0;
@@ -517,7 +493,6 @@ a :hover {
         margin-right: 0;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -527,7 +502,6 @@ a :hover {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -544,9 +518,9 @@ a :hover {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         margin: 0;
+        padding-bottom: 4rem;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -556,7 +530,6 @@ a :hover {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -566,9 +539,6 @@ a :hover {
         }
 
     }
-
-
-
 
     &__block_item:first-child {
         margin-left: 0;
@@ -601,6 +571,7 @@ a :hover {
             margin-left: 0;
             margin-right: 0;
             margin-top: 1rem;
+            padding-bottom: 4rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -642,7 +613,10 @@ a :hover {
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
+    }
 
+    &__block_item p {
+        padding-top: 1rem;
     }
 
     //.about__heading
@@ -664,9 +638,6 @@ a :hover {
         }
     }
 }
-
-// new version end
-
 
 .footer {
     display: grid;
@@ -742,11 +713,6 @@ a :hover {
         margin-left: 1em;
     }
 
-    &__social a:hover {
-        background-color: $blue-hover;
-        border-radius: 5px;
-    }
-
     // .footer__copyright
     &__copyright {
         display: grid;
@@ -775,6 +741,11 @@ a :hover {
     width: 40px;
 }
 
+.social_icon:hover {
+    background-color: $blue-hover;
+    border-radius: 20px;
+}
+
 
 //// MENU BURGER start ////
 .burger__menu {
@@ -798,7 +769,7 @@ a :hover {
 #menuToggle {
     display: block;
     position: absolute;
-    top: 19rem;
+    top: 13rem;
     left: 30px;
     z-index: 1;
     max-width: 90%;
