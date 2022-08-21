@@ -1119,9 +1119,7 @@ a :hover {
 }
 
 .aboutservices {
-  display: grid;
   background-color: #000;
-  justify-self: center;
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
@@ -1131,7 +1129,6 @@ a :hover {
 }
 @media screen and (max-width: 1200px) {
   .aboutservices {
-    display: grid;
     margin-left: 2em;
     margin-right: 2em;
   }
