@@ -24,19 +24,10 @@ body {
         margin: 0;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            position: relative;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr;
-            background-color: $color-main;
             margin: 2rem 0 0 0;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            position: relative;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr;
             background-color: $color-main;
             margin: 2rem 0 0 0;
         }
@@ -54,8 +45,6 @@ body {
         margin: 0;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            position: relative;
             grid-template-rows: 8rem 8rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
@@ -65,8 +54,6 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            position: relative;
             grid-template-rows: 8rem 8rem;
             grid-template-columns: 1fr;
             background-color: $color-main;
@@ -86,39 +73,16 @@ body {
         justify-content: center;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-rows: 8rem 8rem;
             grid-template-columns: 12rem 1fr;
-            background-color: $color-main;
             margin-top: 1rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-rows: 8rem 8rem;
             grid-template-columns: 8rem 1fr;
-            background-color: $color-main;
             margin-top: 1rem;
         }
-
-        /*
-        @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 8rem 6rem 8rem;
-            background-color: $color-main;
-            margin-top: 1rem;
-        }
-
-        @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 8rem 6rem 8rem;
-            background-color: $color-main;
-            margin-top: 1rem;
-        }
-        */
-
     }
 
     // .container__nav
@@ -143,13 +107,11 @@ body {
         grid-template-columns: 1fr;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
         }
@@ -173,7 +135,6 @@ body {
         max-height: 130px;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             justify-items: end;
@@ -182,7 +143,6 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             justify-items: center;
@@ -231,7 +191,6 @@ body {
         margin-top: 1rem;
 
         @media screen and (max-width: $grid-breakpoint-xxl) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(4, 1fr);
             text-align: center;
@@ -260,11 +219,10 @@ body {
         margin-top: 3rem;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
             justify-items: end;
-            font-size: $font-size-home;
+            font-size: $font-size-home-mobile;
             margin-top: 3rem;
             padding: 0;
             margin-left: 24rem;
@@ -272,7 +230,6 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
             justify-items: right;
@@ -286,8 +243,14 @@ body {
     }
 }
 
-.logo__tel:hover {
-    color: $menu-color;
+.numbers,
+a {
+    color: white;
+}
+
+.numbers,
+a :hover {
+    color: $blue-hover;
 }
 
 #first_tel {
@@ -390,16 +353,6 @@ body {
     @media screen and (max-width: $grid-breakpoint-sm) {
         width: 90%;
     }
-
-    /*
-    @media screen and (max-width: $grid-breakpoint-md) {
-        width: 25%;
-    }
-
-    @media screen and (max-width: $grid-breakpoint-sm) {
-        width: 40%;
-    }
-    */
 }
 
 .nav {
@@ -435,7 +388,7 @@ body {
     }
 
     &__item:hover {
-        color: #09a7d7;
+        color: $blue-hover;
     }
 }
 
@@ -459,19 +412,14 @@ body {
         font-size: $font-size-home;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
-            color: $text-color;
             text-align: center;
             align-items: center;
-            line-height: 30px;
             font-size: $font-size-home-mobile;
             margin-bottom: 0;
             margin-top: 2rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
-            color: $text-color;
             text-align: center;
             align-items: center;
             line-height: 26px;
@@ -483,8 +431,6 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-xxl) {
-            display: grid;
-            color: $text-color;
             text-align: center;
             align-items: center;
             line-height: 34px;
@@ -509,7 +455,6 @@ body {
     }
 }
 
-// new version start
 .about {
 
     // .about__details
@@ -521,7 +466,6 @@ body {
         margin-right: 2rem;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 6rem 1fr 1fr;
             margin-left: 0;
@@ -530,7 +474,6 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 6rem 1fr 1fr;
             margin-left: 0;
@@ -550,7 +493,6 @@ body {
         margin-right: 0;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -560,7 +502,6 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -577,9 +518,9 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         margin: 0;
+        padding-bottom: 4rem;
 
         @media screen and (max-width: $grid-breakpoint-md) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -589,7 +530,6 @@ body {
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
-            display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin-top: 0;
@@ -631,6 +571,7 @@ body {
             margin-left: 0;
             margin-right: 0;
             margin-top: 1rem;
+            padding-bottom: 4rem;
         }
 
         @media screen and (max-width: $grid-breakpoint-sm) {
@@ -672,7 +613,10 @@ body {
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
+    }
 
+    &__block_item p {
+        padding-top: 1rem;
     }
 
     //.about__heading
@@ -694,9 +638,6 @@ body {
         }
     }
 }
-
-// new version end
-
 
 .footer {
     display: grid;
@@ -801,7 +742,7 @@ body {
 }
 
 .social_icon:hover {
-    background-color: lightgrey;
+    background-color: $blue-hover;
     border-radius: 20px;
 }
 

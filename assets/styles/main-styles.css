@@ -28,7 +28,7 @@ header,
 main,
 section,
 footer {
-  max-width: 100vw;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
@@ -171,20 +171,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container__home {
-    display: grid;
-    position: relative;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    background-color: #000;
     margin: 2rem 0 0 0;
   }
 }
 @media screen and (max-width: 576px) {
   .container__home {
-    display: grid;
-    position: relative;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
     background-color: #000;
     margin: 2rem 0 0 0;
   }
@@ -201,8 +192,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container__menu {
-    display: grid;
-    position: relative;
     grid-template-rows: 8rem 8rem;
     grid-template-columns: 1fr;
     background-color: #000;
@@ -213,8 +202,6 @@ body {
 }
 @media screen and (max-width: 576px) {
   .container__menu {
-    display: grid;
-    position: relative;
     grid-template-rows: 8rem 8rem;
     grid-template-columns: 1fr;
     background-color: #000;
@@ -229,39 +216,18 @@ body {
   grid-template-columns: 25% 1fr 25%;
   background-color: #000;
   justify-content: center;
-  /*
-  @media screen and (max-width: $grid-breakpoint-md) {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 8rem 6rem 8rem;
-      background-color: $color-main;
-      margin-top: 1rem;
-  }
-
-  @media screen and (max-width: $grid-breakpoint-sm) {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 8rem 6rem 8rem;
-      background-color: $color-main;
-      margin-top: 1rem;
-  }
-  */
 }
 @media screen and (max-width: 768px) {
   .container__logo {
-    display: grid;
     grid-template-rows: 8rem 8rem;
     grid-template-columns: 12rem 1fr;
-    background-color: #000;
     margin-top: 1rem;
   }
 }
 @media screen and (max-width: 576px) {
   .container__logo {
-    display: grid;
     grid-template-rows: 8rem 8rem;
     grid-template-columns: 8rem 1fr;
-    background-color: #000;
     margin-top: 1rem;
   }
 }
@@ -287,14 +253,12 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container__about {
-    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 576px) {
   .container__about {
-    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
@@ -313,7 +277,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .logo__img {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: end;
@@ -323,7 +286,6 @@ body {
 }
 @media screen and (max-width: 576px) {
   .logo__img {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
@@ -371,7 +333,6 @@ body {
 }
 @media screen and (max-width: 1400px) {
   .logo__name {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     text-align: center;
@@ -402,11 +363,10 @@ body {
 }
 @media screen and (max-width: 768px) {
   .logo__tel {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: end;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 3rem;
     padding: 0;
     margin-left: 24rem;
@@ -415,7 +375,6 @@ body {
 }
 @media screen and (max-width: 576px) {
   .logo__tel {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-items: right;
@@ -428,8 +387,14 @@ body {
   }
 }
 
-.logo__tel:hover {
+.numbers,
+a {
   color: white;
+}
+
+.numbers,
+a :hover {
+  color: #0884F8;
 }
 
 #first_tel {
@@ -529,15 +494,6 @@ body {
 
 .img_responsive {
   width: 40%;
-  /*
-  @media screen and (max-width: $grid-breakpoint-md) {
-      width: 25%;
-  }
-
-  @media screen and (max-width: $grid-breakpoint-sm) {
-      width: 40%;
-  }
-  */
 }
 @media screen and (max-width: 768px) {
   .img_responsive {
@@ -580,7 +536,7 @@ body {
   }
 }
 .nav__item:hover {
-  color: #09a7d7;
+  color: #0884F8;
 }
 
 .about__content {
@@ -599,11 +555,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .about__text {
-    display: grid;
-    color: #cdcdcd;
     text-align: center;
     align-items: center;
-    line-height: 30px;
     font-size: 22px;
     margin-bottom: 0;
     margin-top: 2rem;
@@ -611,8 +564,6 @@ body {
 }
 @media screen and (max-width: 576px) {
   .about__text {
-    display: grid;
-    color: #cdcdcd;
     text-align: center;
     align-items: center;
     line-height: 26px;
@@ -625,8 +576,6 @@ body {
 }
 @media screen and (max-width: 1400px) {
   .about__text {
-    display: grid;
-    color: #cdcdcd;
     text-align: center;
     align-items: center;
     line-height: 34px;
@@ -659,7 +608,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .about__details {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 6rem 1fr 1fr;
     margin-left: 0;
@@ -669,7 +617,6 @@ body {
 }
 @media screen and (max-width: 576px) {
   .about__details {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 6rem 1fr 1fr;
     margin-left: 0;
@@ -688,7 +635,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .about__blocks_top {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 0;
@@ -699,7 +645,6 @@ body {
 }
 @media screen and (max-width: 576px) {
   .about__blocks_top {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 0;
@@ -713,10 +658,10 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   margin: 0;
+  padding-bottom: 4rem;
 }
 @media screen and (max-width: 768px) {
   .about__blocks_bottom {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 0;
@@ -727,7 +672,6 @@ body {
 }
 @media screen and (max-width: 576px) {
   .about__blocks_bottom {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 0;
@@ -770,6 +714,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-top: 1rem;
+    padding-bottom: 4rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -813,6 +758,9 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+}
+.about__block_item p {
+  padding-top: 1rem;
 }
 .about__heading {
   text-align: center;
@@ -930,7 +878,7 @@ body {
 }
 
 .social_icon:hover {
-  background-color: lightgrey;
+  background-color: #0884F8;
   border-radius: 20px;
 }
 
