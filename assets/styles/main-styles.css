@@ -161,6 +161,10 @@ body {
   background-color: #000;
 }
 
+body {
+  max-width: 1296px;
+}
+
 .container__home {
   display: grid;
   position: relative;

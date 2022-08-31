@@ -12,6 +12,10 @@ body {
     background-color: $color-main;
 }
 
+body {
+    max-width: $container-max-width;
+}
+
 .container {
 
     // .container__home
